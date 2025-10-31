@@ -1,4 +1,0 @@
-name = "soho-comedy-house"
-compatibility_date = "2025-04-03"
-assets = { not_found_handling = "single-page-application" }
-pages_build_output_dir = "./dist"
