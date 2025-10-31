@@ -1,31 +1,9 @@
 "use client"
 
 import type React from "react"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Mail, MapPin, Phone } from "lucide-react"
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", message: "" })
-  }
-
   return (
     <section id="contact" className="py-16 sm:py-24 bg-card border-t border-border">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,62 +74,19 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-background p-8 rounded-lg border border-border">
-            <h3 className="text-2xl font-special-elite font-bold text-foreground mb-6">Send us a Message</h3>
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                  Your Name
-                </label>
-                <Input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="John Doe"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="bg-input border-border text-foreground placeholder-foreground/50"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email Address
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="john@example.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="bg-input border-border text-foreground placeholder-foreground/50"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your message..."
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  required
-                  className="w-full px-4 py-2 bg-input border border-border text-foreground placeholder-foreground/50 rounded-md focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                />
-              </div>
-
-              <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                Send Message
-              </Button>
-            </form>
+          <div className="bg-background rounded-lg border border-border">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.961005064786!2d-0.13252139999999998!3d51.5139314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605d79201def9%3A0x5db284b6659bc671!2s30%20Dean%20Street%20Bar%20%26%20Club!5e0!3m2!1sen!2sin!4v1761918770369!5m2!1sen!2sin"
+              loading="lazy"
+              className="w-full h-full rounded-lg"
+              style={{ 
+                border: 0,
+                filter: 'invert(90%) hue-rotate(180deg)'
+                }}
+              allowFullScreen={true}
+              aria-hidden="false"
+              tabIndex={0}
+            ></iframe>
           </div>
         </div>
       </div>
