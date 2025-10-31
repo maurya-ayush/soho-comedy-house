@@ -1,6 +1,5 @@
 "use client"
 
-import type React from "react"
 import { Mail, MapPin, Phone } from "lucide-react"
 
 export default function Contact() {

@@ -46,7 +46,7 @@ export default function Footer() {
             <h4 className="font-semibold text-card-foreground mb-4">Contact</h4>
             <div className="space-y-3 text-sm">
               <div className="flex gap-2 items-start">
-                <Mail className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                 <a
                   href="mailto:info@sohocomedyhouse.com"
                   className="text-card-foreground/70 hover:text-primary transition-colors"
@@ -55,7 +55,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex gap-2 items-start">
-                <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                 <div className="text-card-foreground/70">
                   <p>30 Dean Street</p>
                   <p>London, W1D 3AU</p>
