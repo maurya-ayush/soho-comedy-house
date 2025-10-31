@@ -32,7 +32,7 @@ const shows = [
 
 export default function Shows() {
     return (
-        <section id="shows" className="py-20 bg-background border-t border-border relative">
+        <section id="shows" className="py-20 bg-background border-t border-border bg-linear-to-b from-background to-card/40 overflow-hidden relative">
         {/* Section Heading */}
         <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-special-elite font-bold text-foreground mb-4">

@@ -62,7 +62,7 @@ export default function Contact() {
             </div>
 
             {/* Hours */}
-            <div className="bg-background/50 p-6 rounded-lg border border-border">
+            <div className="bg-foreground/50 dark:bg-background/50 p-6 rounded-lg border border-border">
               <h4 className="font-semibold text-card-foreground mb-3">Opening Hours</h4>
               <div className="space-y-2 text-sm text-card-foreground/70">
                 <p>Monday - Thursday: 7:00 PM - 11:00 PM</p>
