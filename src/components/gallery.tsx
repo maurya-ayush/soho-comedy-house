@@ -29,7 +29,7 @@ export default function Gallery() {
     }, [emblaApi])
 
     return (
-        <section id="gallery" className="relative py-20 ">
+        <section id="gallery" className="relative py-10 ">
         {/* Section Title */}
         <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-special-elite font-bold text-foreground mb-4">
