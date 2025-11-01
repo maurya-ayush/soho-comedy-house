@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone, Instagram } from "lucide-react"
 
 export default function Contact() {
   return (
@@ -19,7 +19,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-foreground/50 dark:bg-background/50 p-6 rounded-lg border border-border">
-              <h4 className="font-semibold text-card-foreground mb-3">Attention All Comedians</h4>
+              <h4 className="font-semibold text-card-foreground mb-3">Attention All Comedians and Producers</h4>
               <div className="space-y-2 text-md text-card-foreground/70">
                 <p>Soho Comedy House is looking for new and aspiring stand-up comedians to get on stage. If you're looking to start your journey in comedy, we want to hear from you.</p>
                 <p>Please send an email with your details, any prior experience (it's okay if you have none), and a 5-minute clip if you have one.</p>
@@ -65,6 +65,24 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">Phone</h4>
                   <p className="text-primary hover:underline cursor-pointer">Coming Soon</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Instagram className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-card-foreground mb-1">Instagram</h4>
+                  <p className="text-primary hover:underline cursor-pointer">
+                    <a 
+                      href="https://www.instagram.com/30_dean_street" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      30_dean_street
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>

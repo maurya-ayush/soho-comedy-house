@@ -1,4 +1,4 @@
-import { Mail, MapPin } from "lucide-react"
+import { Instagram, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -59,6 +59,17 @@ export default function Footer() {
                   <p>30 Dean Street</p>
                   <p>London, W1D 3RZ</p>
                 </div>
+              </div>
+              <div className="flex gap-2 items-start">
+                <Instagram className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                <a
+                  href="https://www.instagram.com/30_dean_street" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-card-foreground/70 hover:text-primary transition-colors"
+                >
+                  30_dean_street
+                </a>
               </div>
             </div>
           </div>
