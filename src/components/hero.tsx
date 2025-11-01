@@ -39,7 +39,7 @@ export default function Hero() {
 
         {/* Location badge */}
         <div className="mt-12 inline-block bg-card border border-border rounded-full px-6 py-3">
-          <p className="text-sm sm:text-base text-background/70 dark:text-foreground/70">📍 30 Dean Street, Soho, London, W1D 3AU</p>
+          <p className="text-sm sm:text-base text-background/70 dark:text-foreground/70">📍 30 Dean Street, Soho, London, W1D 3RZ</p>
         </div>
       </div>
     </section>

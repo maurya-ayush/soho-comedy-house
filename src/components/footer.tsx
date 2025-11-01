@@ -9,8 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-special-elite font-bold text-card-foreground mb-4">Soho Comedy House</h3>
             <p className="text-sm text-card-foreground/70">
-              Premium comedy venue in the heart of London's Soho, featuring world-class comedians and unforgettable
-              performances.
+              Soho Comedy House is a premier comedy and entertainment venue right in the vibrant heart of Soho.
             </p>
           </div>
 
@@ -58,7 +57,7 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                 <div className="text-card-foreground/70">
                   <p>30 Dean Street</p>
-                  <p>London, W1D 3AU</p>
+                  <p>London, W1D 3RZ</p>
                 </div>
               </div>
             </div>

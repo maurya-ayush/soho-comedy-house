@@ -10,24 +10,21 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-              Soho Comedy House is a premier comedy venue combining the best of Comedy Cellar's legendary lineage with
-              the exclusive charm of The Top Secret Comedy Club.
+              Soho Comedy House is a premier comedy and entertainment venue right in the vibrant heart of Soho. 
             </p>
 
             <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-              Located in the vibrant heart of Soho, our intimate venue hosts the finest stand-up comedians from around
-              the world. Whether you're a comedy enthusiast or a first-time visitor, we promise an unforgettable evening
-              filled with laughter.
+              Spread across three lively floors, we offer an unforgettable night filled with laughter, live entertainment, and pure Soho energy. 
+            </p>
+
+            <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
+              Whether you're here for an evening of comedy, drinks with friends, or a spontaneous dance, Soho Comedy House guarantees a vibrant atmosphere and memorable experience in London’s iconic entertainment district.
             </p>
 
             <div className="space-y-3 pt-6">
               <div className="flex items-start gap-3">
                 <span className="text-primary text-2xl">✓</span>
                 <p className="text-foreground/80">Intimate, world-class comedy performances</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-primary text-2xl">✓</span>
-                <p className="text-foreground/80">Premium venue in central London</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-primary text-2xl">✓</span>
@@ -46,22 +43,32 @@ export default function About() {
 
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Legendary Talent</h4>
+                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Prime Soho Location</h4>
                   <p className="text-sm text-background/70 dark:text-foreground/70">
-                    Top international comedians perform regularly at our venue
+                    Just minutes from Leicester Square, Piccadilly Circus, Tottenham Court Road, and Oxford Circus stations — right in London’s entertainment heart.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Intimate Atmosphere</h4>
+                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Three Floors of Fun</h4>
                   <p className="text-sm text-background/70 dark:text-foreground/70">
-                    Perfect sightlines and acoustics for every seat in the house
+                    Multiple levels open to the public for comedy, drinks, dance, and music.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Soho Heritage</h4>
-                  <p className="text-sm text-background/70 dark:text-foreground/70">Located in London's most iconic entertainment district</p>
+                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Free Karaoke All Night</h4>
+                  <p className="text-sm text-background/70 dark:text-foreground/70">Sing your heart out or cheer for your friends — every night is a show.</p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Salsa & DJ Nights</h4>
+                  <p className="text-sm text-background/70 dark:text-foreground/70">Move to the rhythm or take over the booth — be your own DJ in Soho’s liveliest spot.</p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-background dark:text-foreground mb-2">Unforgettable Atmosphere</h4>
+                  <p className="text-sm text-background/70 dark:text-foreground/70">An electric blend of comedy, music, and laughter that captures the true spirit of Soho.</p>
                 </div>
               </div>
             </div>
