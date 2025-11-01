@@ -10,12 +10,12 @@ const shows = [
         performer: "All Shows",
         price: "£4",
         venue: "Soho Comedy House, Dean Street",
-        descriptionLine1: "Show 1 (6:00 PM - 8:00 PM)",
+        descriptionLine1: "Show 1 (6:00 PM - 8:00 PM).",
         descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
     {
-        date: "Thur",
+        date: "Thurday",
         time: "6:00 PM - 10:30 PM",
         performer: "All Shows",
         price: "£5",
@@ -25,7 +25,7 @@ const shows = [
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
     {
-        date: "Fri",
+        date: "Friday",
         time: "6:00 PM - 10:30 PM",
         performer: "All Shows",
         price: "£8",
@@ -35,22 +35,22 @@ const shows = [
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
     {
-        date: "Sat",
+        date: "Saturday",
         time: "4:30 PM - 11:30 PM",
         performer: "All Shows",
         price: "£8",
         venue: "Soho Comedy House, Dean Street",
-        descriptionLine1: "Show 1 (4:30 PM - 6:30 PM)",
+        descriptionLine1: "Show 1 (4:30 PM - 6:30 PM).",
         descriptionLine2: "Show 2 (7:00 PM - 9:00 PM).",
         descriptionLine3: "Show 3 (9:30 PM - 11:30 PM). Arriving Time :- Half Hour Early to Collect Tickets.",
     },
     {
-        date: "Sun",
+        date: "Sunday",
         time: "5:00 PM - 9:30 PM",
         performer: "All Shows",
         price: "£4",
         venue: "Soho Comedy House, Dean Street",
-        descriptionLine1: "Show 1 (5:00 PM - 7:00 PM)",
+        descriptionLine1: "Show 1 (5:00 PM - 7:00 PM).",
         descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
@@ -58,7 +58,7 @@ const shows = [
 
 export default function Shows() {
     return (
-        <section id="shows" className="py-20 bg-background border-t border-border bg-linear-to-b from-background to-card/40 overflow-hidden relative">
+        <section id="shows" className="py-10 md:py-20 bg-background border-t border-border bg-linear-to-b from-background to-card/40 overflow-hidden relative">
         {/* Section Heading */}
         <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-special-elite font-bold text-foreground mb-4">
