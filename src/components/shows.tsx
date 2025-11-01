@@ -28,7 +28,7 @@ const shows = [
         date: "Fri",
         time: "6:00 PM - 10:30 PM",
         performer: "All Shows",
-        price: "£4",
+        price: "£8",
         venue: "Soho Comedy House, Dean Street",
         descriptionLine1: "Show 1 (6:00 PM - 8:00 PM).",
         descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",

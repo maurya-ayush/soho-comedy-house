@@ -25,6 +25,12 @@ export default function Hero() {
           <Button
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-8"
+            onClick={() => {
+              const section = document.getElementById("shows");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Book Tickets
           </Button>
@@ -32,6 +38,12 @@ export default function Hero() {
             size="lg"
             variant="outline"
             className="border-primary dark:border-primary text-primary dark:text-primary hover:bg-primary/10 dark:hover:bg-primary/10 text-base sm:text-lg px-8 bg-transparent"
+            onClick={() => {
+              const section = document.getElementById("about");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Learn More
           </Button>

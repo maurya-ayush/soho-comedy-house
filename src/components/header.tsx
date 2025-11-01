@@ -33,13 +33,37 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-lg text-foreground hover:text-primary transition-colors">
+          <a 
+            className="text-lg text-foreground hover:text-primary transition-colors"
+            onClick={() => {
+              const section = document.getElementById("about");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             About
           </a>
-          <a href="#contact" className="text-lg text-foreground hover:text-primary transition-colors">
+          <a 
+            className="text-lg text-foreground hover:text-primary transition-colors"
+            onClick={() => {
+              const section = document.getElementById("contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             Contact
           </a>
-          <Button className=" text-lg items-center bg-primary text-primary-foreground hover:bg-primary/90">Book Now</Button>
+          <Button 
+            className=" text-lg items-center bg-primary text-primary-foreground hover:bg-primary/90"
+            onClick={() => {
+              const section = document.getElementById("shows");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >Book Now</Button>
 
           {/* 👇 Mode Toggle Button */}
           <ModeToggle />
@@ -69,7 +93,15 @@ export default function Header() {
             <a href="#contact" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Contact
             </a>
-            <Button className="w-full bg-primary text-primary-background hover:bg-primary/90">Book Now</Button>
+            <Button 
+              className="w-full bg-primary text-primary-background hover:bg-primary/90"
+              onClick={() => {
+              const section = document.getElementById("shows");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            >Book Now</Button>
           </div>
         </div>
       )}
