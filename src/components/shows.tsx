@@ -69,7 +69,7 @@ export default function Shows() {
             <p className="text-foreground/70 max-w-2xl mx-auto text-lg">
             Catch your favorite comedians live on stage — laughter, drinks, and an unforgettable evening await.
             </p>
-            <p className="text-primary max-w-2xl mx-auto text-lg">
+            <p className="text-primary max-w-2xl mx-auto text-lg mt-3">
                 (1 item minimum per person: Drink or bottle of water.)
             </p>
         </div>
