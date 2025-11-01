@@ -1,6 +1,6 @@
 "use client"
 
-import { CalendarDays, Clock, MapPin, User, PoundSterling } from "lucide-react"
+import { CalendarDays, Clock, MapPin, PoundSterling, Ban } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const shows = [
@@ -72,6 +72,9 @@ export default function Shows() {
             <p className="text-primary max-w-2xl mx-auto text-lg mt-3">
                 (1 item minimum per person: Drink or bottle of water.)
             </p>
+            <p className="text-primary max-w-2xl mx-auto text-sm">
+                Photo ID required. Bar after show until <text className="text-amber-50">1 am</text> (on Sunday's until <text className="text-amber-50">12 am</text>).
+            </p>
         </div>
 
         {/* Shows Grid */}
@@ -107,13 +110,17 @@ export default function Shows() {
                     <MapPin className="w-4 h-4 text-primary" />
                     {show.venue}
                     </div>
-                    <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
+                    {/* <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
                     <User className="w-4 h-4 text-primary" />
                     Performer: {show.performer}
-                    </div>
+                    </div> */}
                     <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
                     <PoundSterling className="w-4 h-4 text-primary" />
-                    Ticket Price: <span className="font-semibold ml-1">{show.price}</span>
+                        Ticket Price: <span className="font-semibold ml-1">{show.price}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
+                    <Ban className="w-4 h-4 text-primary" />
+                        Age Restriction: <text className="text-primary font-bold">Strictly  18+</text>
                     </div>
                 </div>
                 </div>
