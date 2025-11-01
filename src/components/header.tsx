@@ -9,7 +9,7 @@ export default function Header() {
   const { theme } = useTheme()
 
   // Dynamic logo based on theme
-  const logoSrc = theme === "dark" ? "/logo-light.png" : "/logo-dark.png"
+  const logoSrc = theme === "dark" ? "/logo-dark.png" : "/logo-light.png"
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
