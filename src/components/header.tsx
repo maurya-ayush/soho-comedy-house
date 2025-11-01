@@ -15,15 +15,12 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex items-center justify-between">
         {/* Left Section: Logo + Title */}
-        <div className="flex items-center gap-3 flex-1">
+        <div className="flex items-center gap-1 flex-1">
           <img
             src={logoSrc}
             alt="Soho Comedy House Logo"
             className="h-12 w-auto transition-opacity duration-300"
           />
-          <h1 className="hidden md:block text-2xl sm:text-3xl font-special-elite font-bold text-primary whitespace-nowrap">
-            Soho Comedy House
-          </h1>
           <img
             src="/comic.png"
             alt="Comedian Silhouette"
