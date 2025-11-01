@@ -28,12 +28,16 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-card-foreground/70 hover:text-primary transition-colors">
+                <a href="#shows" className="text-card-foreground/70 hover:text-primary transition-colors">
                   Book Tickets
                 </a>
               </li>
               <li>
-                <a href="#" className="text-card-foreground/70 hover:text-primary transition-colors">
+                <a href="https://www.30deanstreet.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-card-foreground/70 hover:text-primary transition-colors"
+                >
                   Private Events
                 </a>
               </li>
