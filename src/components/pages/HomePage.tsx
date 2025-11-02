@@ -7,7 +7,7 @@ import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 
 
-const LandingPage = () => {
+const HomePage = () => {
     return (
         <div className="min-h-screen " style={{ fontFamily: 'var(--font-special-elite)' }}>
         <Header />
@@ -21,4 +21,4 @@ const LandingPage = () => {
     )
 }
 
-export default LandingPage
+export default HomePage
