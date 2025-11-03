@@ -47,7 +47,7 @@ export function HomeShowsSection() {
     }
 
     return (
-        <section className="py-16 bg-background border-t border-border transition-colors">
+        <section id="upcoming-shows" className="py-16 bg-background border-t border-border transition-colors">
             <div className="text-center mb-12 px-4">
                 <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">UPCOMING SHOWS</h2>
                 <div className="h-1 w-20 bg-primary mx-auto mb-4" />

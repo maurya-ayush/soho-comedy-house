@@ -39,7 +39,7 @@ export default function Hero() {
             variant="outline"
             className="border-primary dark:border-primary text-primary dark:text-primary hover:bg-primary/10 dark:hover:bg-primary/10 text-base sm:text-lg px-8 bg-transparent"
             onClick={() => {
-              const section = document.getElementById("about");
+              const section = document.getElementById("upcoming-shows");
               if (section) {
                 section.scrollIntoView({ behavior: "smooth" });
               }

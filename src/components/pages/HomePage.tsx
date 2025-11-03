@@ -14,8 +14,8 @@ const HomePage = () => {
         <Header />
         <Hero />
         <Gallery />
-        <Shows /> 
         <HomeShowsSection />
+        <Shows /> 
         <About />
         <Contact />
         <Footer />
