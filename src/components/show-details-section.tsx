@@ -74,11 +74,11 @@ export default function ShowDetailsSection() {
     const priceInPounds = (show.price / 100).toFixed(2)
 
     return (
-        <main className="min-h-screen bg-background pt-20 md:pt-40 pb-10 transition-colors bg-linear-to-b from-background to-card" style={{ fontFamily: 'var(--font-special-elite)' }}>
+        <main className="min-h-screen bg-background pt-20 md:pt-28 pb-10 transition-colors bg-linear-to-b from-background to-card" style={{ fontFamily: 'var(--font-special-elite)' }}>
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" >
                 {/* Back Button */}
                 <Link to="/events" className="inline-block mb-6">
-                    <Button variant="outline">← Back to Events</Button>
+                    <Button variant="outline" className="hover:text-primary ">← Back to Events</Button>
                 </Link>
 
                 {/* Show Details Card */}
