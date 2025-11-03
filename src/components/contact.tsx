@@ -48,9 +48,9 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">Location</h4>
                   <p className="text-card-foreground/80">
-                    30 Dean Street
+                    30 Dean Street Bar and Club
                     <br />
-                    Soho, London
+                    Soho
                     <br />
                     W1D 3RZ
                   </p>
