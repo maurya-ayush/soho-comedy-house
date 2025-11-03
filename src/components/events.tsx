@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { ShowCard } from "@/components/show-card";
 import { Button } from "@/components/ui/button";
+import baseURL from "@/lib/baseUrl";
 
 interface Show {
     id: string;
@@ -22,7 +23,7 @@ export default function EventsSection() {
 
     const fetchShows = async () => {
         try {
-            const res = await fetch("/api/shows", { cache: "no-store" });
+            const res = await fetch(`${baseURL}/api/shows`);
             if (!res.ok) throw new Error("Failed to fetch shows");
             const data = await res.json();
             if (!data.shows || data.shows.length === 0) {

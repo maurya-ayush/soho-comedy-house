@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom"
 import { CalendarDays, Clock, MapPin, PoundSterling, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Link } from 'react-router-dom'
+import baseURL from "@/lib/baseUrl"
 
 interface Show {
     id: string
@@ -25,7 +26,7 @@ export default function ShowDetailsSection() {
     useEffect(() => {
         const fetchShow = async () => {
             try {
-                const res = await fetch(`/api/shows/${showId}`)
+                const res = await fetch(`${baseURL}/api/shows/${showId}`)
                 if (!res.ok) throw new Error("Failed to load show details")
                 const data = await res.json()
                 setShow(data.show)

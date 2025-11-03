@@ -12,8 +12,8 @@ export default defineConfig({
     },
   },
   server: {
-  proxy: {
-    '/api': 'http://localhost:8787'
-  }
+    proxy: {
+      '/api': 'https://api.sohocomedyhouse.com'
+    }
 }
 })

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { ShowCard } from "@/components/show-card"
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
+import baseURL from "@/lib/baseUrl"
 
 interface Show {
     id: string
@@ -22,7 +23,7 @@ export function HomeShowsSection() {
     useEffect(() => {
         const fetchShows = async () => {
             try {
-                const response = await fetch("/api/shows")
+                const response = await fetch(`${baseURL}/api/shows`)
                 if (response.ok) {
                     const data = await response.json()
                     setShows(data.shows.slice(0, 2))
