@@ -117,7 +117,7 @@ export default function ShowDetailsSection() {
                             <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                             <div>
                                 <p className="text-sm text-muted-foreground mb-1">Venue</p>
-                                <p className="text-lg font-semibold text-foreground">Soho Comedy House, Dean Street</p>
+                                <p className="text-lg font-semibold text-foreground">30 Dean Street Bar and Club</p>
                             </div>
                         </div>
 

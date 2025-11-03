@@ -53,7 +53,7 @@ export function ShowCard({ show }: { show: Show }) {
                 <div className="space-y-2 text-sm">
                     <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
                         <MapPin className="w-4 h-4 text-primary" />
-                        Soho Comedy House, Dean Street
+                        30 Dean Street Bar and Club
                     </div>
                     <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
                         <PoundSterling className="w-4 h-4 text-primary" />
