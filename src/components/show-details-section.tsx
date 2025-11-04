@@ -4,8 +4,10 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { CalendarDays, Clock, MapPin, PoundSterling, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 import baseURL from "@/lib/baseUrl"
+import TicketBookingForm from "@/components/ticket-booking-form"
+import BookingConfirmation from "@/components/booking-confirmation"
 
 interface Show {
     id: string
@@ -17,27 +19,41 @@ interface Show {
     total_seats: number
 }
 
+interface BookingData {
+    status: "confirmed" | "waitlisted"
+    bookingId: string
+    seatsBooked?: number
+    seatsRequested?: number
+    remainingSeats: number
+}
+
 export default function ShowDetailsSection() {
     const { showId } = useParams()
     const [show, setShow] = useState<Show | null>(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
+    const [showBookingForm, setShowBookingForm] = useState(false)
+    const [bookingConfirmation, setBookingConfirmation] = useState<{
+        data: BookingData
+        userName: string
+        userEmail: string
+    } | null>(null)
+    const [bookingError, setBookingError] = useState<string | null>(null)
 
-    useEffect(() => {
-        const fetchShow = async () => {
-            try {
-                const res = await fetch(`${baseURL}/api/shows/${showId}`)
-                if (!res.ok) throw new Error("Failed to load show details")
-                const data = await res.json()
-                setShow(data.show)
-            } catch (err) {
-                console.log(err)
-                setError("Unable to fetch show details. Please try again later.")
-            } finally {
-                setLoading(false)
-            }
+    const fetchShow = async () => {
+        try {
+            const res = await fetch(`${baseURL}/api/shows/${showId}`)
+            if (!res.ok) throw new Error("Failed to load show details")
+            const data = await res.json()
+            setShow(data.show)
+        } catch (err) {
+            console.log(err)
+            setError("Unable to fetch show details. Please try again later.")
+        } finally {
+            setLoading(false)
         }
-
+    }
+    useEffect(() => {
         fetchShow()
     }, [showId])
 
@@ -74,12 +90,31 @@ export default function ShowDetailsSection() {
 
     const priceInPounds = (show.price / 100).toFixed(2)
 
+    const handleBookingSuccess = (data: BookingData, userName: string, userEmail: string) => {
+        console.log("✅ Booking Success:", { data, userName, userEmail })
+        setBookingConfirmation({
+            data,
+            userName,
+            userEmail,
+        })
+        setShowBookingForm(false)
+    }
+
+    const handleBookingError = (errorMsg: string) => {
+        setBookingError(errorMsg)
+    }
+
     return (
-        <main className="min-h-screen bg-background pt-20 md:pt-28 pb-10 transition-colors bg-linear-to-b from-background to-card" style={{ fontFamily: 'var(--font-special-elite)' }}>
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" >
+        <main
+            className="min-h-screen bg-background pt-20 md:pt-28 pb-10 transition-colors bg-linear-to-b from-background to-card"
+            style={{ fontFamily: "var(--font-special-elite)" }}
+        >
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Back Button */}
                 <Link to="/events" className="inline-block mb-6">
-                    <Button variant="outline" className="hover:text-primary ">← Back to Events</Button>
+                    <Button variant="outline" className="hover:text-primary bg-transparent">
+                        ← Back to Events
+                    </Button>
                 </Link>
 
                 {/* Show Details Card */}
@@ -140,10 +175,21 @@ export default function ShowDetailsSection() {
                                 <p className="text-4xl font-bold text-background dark:text-foreground">{priceInPounds}</p>
                             </div>
                         </div>
-                        <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full md:w-auto">
+                        <Button
+                            size="lg"
+                            onClick={() => setShowBookingForm(true)}
+                            className="bg-primary text-primary-foreground hover:bg-primary/90 w-full md:w-auto"
+                        >
                             Buy Tickets
                         </Button>
                     </div>
+
+                    {/* Booking Error Message */}
+                    {bookingError && (
+                        <div className="mt-6 p-4 bg-destructive/10 border border-destructive/30 rounded-lg">
+                            <p className="text-sm text-destructive">{bookingError}</p>
+                        </div>
+                    )}
 
                     {/* Additional Info */}
                     <div className="mt-8 p-6 bg-background rounded-lg border border-border">
@@ -157,6 +203,37 @@ export default function ShowDetailsSection() {
                     </div>
                 </div>
             </div>
+
+            {/* Booking Form Modal */}
+            {showBookingForm && (
+                <TicketBookingForm
+                    showId={showId || ""}
+                    onClose={() => {
+                        setShowBookingForm(false)
+                        setBookingError(null)
+                    }}
+                    onSuccess={(data, userName, userEmail) => {
+                        // Note: You'll need to capture user data in the form
+                        // For now, we're storing it in the confirmation state
+                        handleBookingSuccess(data, userName, userEmail)
+                    }}
+                    onError={handleBookingError}
+                    baseURL={baseURL}
+                />
+            )}
+
+            {/* Booking Confirmation Modal */}
+            {bookingConfirmation && (
+                <BookingConfirmation
+                    booking={bookingConfirmation.data}
+                    userName={bookingConfirmation.userName}
+                    userEmail={bookingConfirmation.userEmail}
+                    onClose={() => { 
+                        setBookingConfirmation(null)
+                        fetchShow()
+                    }}
+                />
+            )}
         </main>
     )
 }
