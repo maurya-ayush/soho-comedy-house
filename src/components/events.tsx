@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ShowCard } from "@/components/show-card";
 import { Button } from "@/components/ui/button";
 import baseURL from "@/lib/baseUrl";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 
 interface Show {
@@ -62,7 +62,6 @@ export default function EventsSection() {
     
     // URL search params sync
     const [searchParams, setSearchParams] = useSearchParams();
-    const navigate = useNavigate();
 
     // Load initial filters from URL on mount
     useEffect(() => {
