@@ -9,11 +9,15 @@ import baseURL from "@/lib/baseUrl"
 interface Show {
     id: string
     title: string
-    description: string
+    venue: string
     date: string
-    time: string
+    startTime: string
+    endTime: string
     price: number
-    total_seats: number
+    performer?: string | null
+    totalSeats: number
+    seatsRemaining: number
+    status: "upcoming" | "ongoing" | "ended"
 }
 
 export function HomeShowsSection() {
@@ -23,20 +27,25 @@ export function HomeShowsSection() {
     useEffect(() => {
         const fetchShows = async () => {
             try {
-                const response = await fetch(`${baseURL}/api/shows`)
-                if (response.ok) {
-                    const data = await response.json()
-                    setShows(data.shows.slice(0, 2))
+                const res = await fetch(`${baseURL}/api/shows`);
+                const data = await res.json();
+
+                if (data.performances) {
+                    // Keep only upcoming or ongoing shows, and limit to 2
+                    const filtered = data.performances
+                        .filter((p: any) => p.status !== 'ended')
+                        .slice(0, 2);
+                    setShows(filtered);
                 }
             } catch (err) {
-                console.error("Error fetching shows:", err)
+                console.error('Failed to fetch shows:', err);
             } finally {
                 setLoading(false)
             }
-        }
+        };
+        fetchShows();
+    }, []);
 
-        fetchShows()
-    }, [])
 
     if (loading) {
         return (

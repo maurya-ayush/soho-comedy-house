@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
-        <Route path="/events/:showId" element={<ShowDetailPage />} /> {/* 👈 dynamic route */}
+        <Route path="/events/:id" element={<ShowDetailPage />} /> {/* 👈 dynamic route */}
       </Routes>
     </Router>
   )
