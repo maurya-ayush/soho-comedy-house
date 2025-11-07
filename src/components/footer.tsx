@@ -1,4 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -28,12 +29,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#shows" className="text-card-foreground/70 hover:text-primary transition-colors">
+                <Link to="/events" className="text-card-foreground/70 hover:text-primary transition-colors">
                   Book Tickets
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.30deanstreet.com/" 
+                <a href="https://www.instagram.com/soho_comedy_house/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-card-foreground/70 hover:text-primary transition-colors"
@@ -61,18 +62,18 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                 <div className="text-card-foreground/70">
                   <p>30 Dean Street Bar and Club</p>
-                  <p>SOHO, London, W1D 3RZ</p>
+                  <p>SOHO, W1D 3RZ, London</p>
                 </div>
               </div>
               <div className="flex gap-2 items-start">
                 <Instagram className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                 <a
-                  href="https://www.instagram.com/30_dean_street" 
+                  href="https://www.instagram.com/soho_comedy_house/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-card-foreground/70 hover:text-primary transition-colors"
                 >
-                  30_dean_street
+                  soho_comedy_house
                 </a>
               </div>
             </div>

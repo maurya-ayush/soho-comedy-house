@@ -5,6 +5,7 @@ import Shows from "@/components/shows"
 import About from "@/components/about"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import { HomeShowsSection } from "@/components/home-shows-section"
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
         <Header />
         <Hero />
         <Gallery />
+        <HomeShowsSection />
         <Shows /> 
         <About />
         <Contact />

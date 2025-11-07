@@ -53,6 +53,8 @@ export default function Contact() {
                     Soho
                     <br />
                     W1D 3RZ
+                    <br />
+                    London
                   </p>
                 </div>
               </div>
@@ -80,7 +82,7 @@ export default function Contact() {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      30_dean_street
+                      soho_comedy_house
                     </a>
                   </p>
                 </div>

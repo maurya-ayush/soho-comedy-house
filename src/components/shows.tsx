@@ -2,12 +2,13 @@
 
 import { CalendarDays, Clock, MapPin, PoundSterling, Ban } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
 
 const shows = [
     {
         date: "Mon - Wed",
         time: "6:00 PM - 10:30 PM",
-        performer: "All Shows",
+        title: "All Shows",
         price: "£4",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show 1 (6:00 PM - 8:00 PM).",
@@ -17,7 +18,7 @@ const shows = [
     {
         date: "Thurday",
         time: "6:00 PM - 10:30 PM",
-        performer: "All Shows",
+        title: "All Shows",
         price: "£5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show 1 (6:00 PM - 8:00 PM).",
@@ -27,7 +28,7 @@ const shows = [
     {
         date: "Friday",
         time: "6:00 PM - 10:30 PM",
-        performer: "All Shows",
+        title: "All Shows",
         price: "£8",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show 1 (6:00 PM - 8:00 PM).",
@@ -37,7 +38,7 @@ const shows = [
     {
         date: "Saturday",
         time: "4:30 PM - 11:30 PM",
-        performer: "All Shows",
+        title: "All Shows",
         price: "£8",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show 1 (4:30 PM - 6:30 PM).",
@@ -47,7 +48,7 @@ const shows = [
     {
         date: "Sunday",
         time: "5:00 PM - 9:30 PM",
-        performer: "All Shows",
+        title: "All Shows",
         price: "£4",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show 1 (5:00 PM - 7:00 PM).",
@@ -98,7 +99,7 @@ export default function Shows() {
                 </div>
 
                 <h3 className="text-2xl font-special-elite font-bold mb-2 text-background dark:text-foreground group-hover:text-primary transition-colors">
-                    {show.performer}
+                    {show.title}
                 </h3>
 
                 <p className="text-background/70 dark:text-foreground/70 mb-2">{show.descriptionLine1}</p>
@@ -112,7 +113,7 @@ export default function Shows() {
                     </div>
                     {/* <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
                     <User className="w-4 h-4 text-primary" />
-                    Performer: {show.performer}
+                    title: {show.title}
                     </div> */}
                     <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
                     <PoundSterling className="w-4 h-4 text-primary" />
@@ -127,11 +128,13 @@ export default function Shows() {
 
                 {/* Button */}
                 <div className="mt-6">
-                <Button
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
-                >
-                    Buy Tickets at the Door
-                </Button>
+                    <Link to="/events">
+                        <Button
+                            className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
+                            >
+                            Buy Tickets at the Door 
+                        </Button>
+                    </Link>
                 </div>
             </div>
             ))}

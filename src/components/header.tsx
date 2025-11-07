@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 import { useTheme } from "@/components/theme-provider"
+import { Link } from "react-router-dom"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex items-center justify-between">
         {/* Left Section: Logo + Title */}
-        <div className="flex items-center gap-1 flex-1">
+        <Link to="/" className="flex items-center gap-1 flex-1">
           <img
             src={logoSrc}
             alt="Soho Comedy House Logo"
@@ -26,10 +27,13 @@ export default function Header() {
             alt="Comedian Silhouette"
             className="h-14 w-auto"
           />
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
+          <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
+            Events
+          </Link>
           <a 
             className="text-lg text-foreground hover:text-primary transition-colors"
             onClick={() => {
@@ -84,21 +88,23 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-card border-b border-border">
           <div className="px-4 py-4 space-y-4">
+            <Link to="/" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+              Home
+            </Link>
+            <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+              Events
+            </Link>
             <a href="#about" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               About
             </a>
             <a href="#contact" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Contact
             </a>
-            <Button 
-              className="w-full bg-primary text-primary-background hover:bg-primary/90"
-              onClick={() => {
-              const section = document.getElementById("shows");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            >Book Now</Button>
+            <Link to="/events">
+              <Button 
+                className="w-full bg-primary text-primary-background hover:bg-primary/90"
+                >Book Now</Button>
+            </Link>
           </div>
         </div>
       )}
