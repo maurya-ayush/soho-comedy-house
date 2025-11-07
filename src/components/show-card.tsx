@@ -100,10 +100,10 @@ export function ShowCard({ show }: { show: Show }) {
                 </div>
 
                 {/* Seats Remaining */}
-                <div className="text-sm text-background/80 dark:text-foreground/80">
+                {/* <div className="text-sm text-background/80 dark:text-foreground/80">
                     <span className="text-primary font-bold">Seats:</span>{" "}
                     {show.seatsRemaining} / {show.totalSeats} left
-                </div>
+                </div> */}
 
                 {/* Status Badge */}
                 <div className="mt-3">

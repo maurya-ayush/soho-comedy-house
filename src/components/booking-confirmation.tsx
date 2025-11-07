@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { CheckCircle, AlertCircle, Mail, Ticket, X } from "lucide-react"
+import QRCode from "react-qr-code"
 
 interface BookingConfirmationProps {
     booking: {
@@ -24,7 +25,6 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-y-auto">
             <div className="relative bg-card border border-border rounded-2xl w-full max-w-md shadow-xl flex flex-col max-h-[90vh]">
                 <div className="overflow-y-auto p-6 sm:p-8">
-
                     {/* Close Button */}
                     <button
                         onClick={onClose}
@@ -39,12 +39,16 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                         {isConfirmed ? (
                             <>
                                 <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                                <h2 className="text-2xl font-bold text-background dark:text-foreground">Booking Confirmed!</h2>
+                                <h2 className="text-2xl font-bold text-background dark:text-foreground">
+                                    Booking Confirmed!
+                                </h2>
                             </>
                         ) : (
                             <>
                                 <AlertCircle className="w-16 h-16 text-amber-500 mx-auto mb-4" />
-                                <h2 className="text-2xl font-bold text-background dark:text-foreground">Added to Waitlist</h2>
+                                <h2 className="text-2xl font-bold text-background dark:text-foreground">
+                                    Added to Waitlist
+                                </h2>
                             </>
                         )}
                     </div>
@@ -54,21 +58,30 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                         <p className="text-background dark:text-foreground text-center">
                             {isConfirmed ? (
                                 <>
-                                    Email confirmation has been sent to <span className="font-semibold">{userEmail}</span>.
+                                    Email confirmation has been sent to{" "}
+                                    <span className="font-semibold text-primary">{userEmail}</span>.
                                     <br />
-                                    Tickets are reserved for <span className="font-semibold">{userName}</span> ({seatsCount}{" "}
-                                    {seatsCount === 1 ? "ticket" : "tickets"}).
+                                    Tickets are reserved for{" "}
+                                    <span className="font-semibold text-primary">{userName}</span> (
+                                    {seatsCount} {seatsCount === 1 ? "ticket" : "tickets"}).
                                 </>
                             ) : (
                                 <>
-                                    Your request for <span className="font-semibold">{seatsCount}</span> seat
-                                    {seatsCount === 1 ? "" : "s"} has been added to the waitlist.
+                                    Your request for{" "}
+                                    <span className="font-semibold">{seatsCount}</span> seat
+                                    {seatsCount === 1 ? "" : "s"} has been added to the
+                                    waitlist.
                                     <br />
-                                    We'll notify you at <span className="font-semibold">{userEmail}</span> if seats become available.
+                                    We'll notify you at{" "}
+                                    <span className="font-semibold">{userEmail}</span> if seats
+                                    become available.
                                 </>
                             )}
                         </p>
-                        <p className="text-xs text-background dark:text-foreground text-center">Don’t forget to take a screenshot of your Booking ID — just in case the confirmation email doesn’t arrive.</p>
+                        <p className="text-xs text-red-400 text-center">
+                            Don’t forget to take a screenshot of your Booking ID — just in
+                            case the confirmation email doesn’t arrive.
+                        </p>
                     </div>
 
                     {/* Booking Details */}
@@ -77,16 +90,38 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                             <Ticket className="w-5 h-5 text-primary flex-shrink-0" />
                             <div>
                                 <p className="text-xs text-muted-foreground">Booking ID</p>
-                                <p className="text-sm font-mono font-semibold text-foreground">{booking.bookingId}</p>
+                                <p className="text-sm font-mono font-semibold text-foreground">
+                                    {booking.bookingId}
+                                </p>
                             </div>
                         </div>
 
                         <div className="flex items-center gap-3 p-3 bg-background rounded-lg border border-border">
                             <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                             <div>
-                                <p className="text-xs text-muted-foreground">Confirmation Sent To</p>
-                                <p className="text-sm font-semibold text-foreground">{userEmail}</p>
+                                <p className="text-xs text-muted-foreground">
+                                    Confirmation Sent To
+                                </p>
+                                <p className="text-sm font-semibold text-foreground">
+                                    {userEmail}
+                                </p>
                             </div>
+                        </div>
+
+                        <div className="flex flex-col items-center p-2 bg-background rounded-lg border border-border mb-6">
+                            <p className="text-xs text-muted-foreground mb-3 font-semibold">
+                                Booking ID QR Code
+                            </p>
+                            <div className="bg-white p-2 rounded-lg">
+                                <QRCode
+                                    value={booking.bookingId}
+                                    size={140}
+                                    level="M"
+                                />
+                            </div>
+                            <p className="text-xs text-muted-foreground mt-3 text-center">
+                                Scan to verify your booking
+                            </p>
                         </div>
 
                         {/* {isConfirmed && (
@@ -102,15 +137,23 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
 
                     {/* Important Information */}
                     <div className="bg-background border border-border rounded-lg p-4 mb-6">
-                        <h3 className="text-sm font-bold text-foreground mb-3">📋 Important Information</h3>
+                        <h3 className="text-sm font-bold text-foreground mb-3">
+                            📋 Important Information
+                        </h3>
                         <ul className="space-y-2 text-xs text-muted-foreground">
                             <li className="flex gap-2">
                                 <span className="text-primary font-bold">•</span>
-                                <span>Don’t forget to take a screenshot of your Booking ID — just in case the confirmation email doesn’t arrive.</span>
+                                <span>
+                                    Don’t forget to take a screenshot of your Booking ID — just
+                                    in case the confirmation email doesn’t arrive.
+                                </span>
                             </li>
                             <li className="flex gap-2">
                                 <span className="text-primary font-bold">•</span>
-                                <span>Check your email (including spam folder) for confirmation details</span>
+                                <span>
+                                    Check your email (including spam folder) for confirmation
+                                    details
+                                </span>
                             </li>
                             <li className="flex gap-2">
                                 <span className="text-primary font-bold">•</span>
@@ -118,7 +161,9 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                             </li>
                             <li className="flex gap-2">
                                 <span className="text-primary font-bold">•</span>
-                                <span>Please arrive 30 minutes early to collect your tickets</span>
+                                <span>
+                                    Please arrive 30 minutes early to collect your tickets
+                                </span>
                             </li>
                             <li className="flex gap-2">
                                 <span className="text-primary font-bold">•</span>
@@ -138,11 +183,14 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                     </div>
 
                     {/* Close Button */}
-                        <Button onClick={onClose} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                            Close
-                        </Button>
+                    <Button
+                        onClick={onClose}
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                        Close
+                    </Button>
                 </div>
             </div>
         </div>
-    )
+    );
 }
