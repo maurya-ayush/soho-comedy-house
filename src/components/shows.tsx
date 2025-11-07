@@ -74,7 +74,7 @@ export default function Shows() {
                 (1 item minimum per person: Drink or bottle of water.)
             </p>
             <p className="text-primary max-w-2xl mx-auto text-sm">
-                Photo ID required. Bar after show until <text className="text-amber-50">1 am</text> (on Sunday's until <text className="text-amber-50">12 am</text>).
+                Photo ID required. Bar after show until <text className="text-foreground dark:text-amber-50">1 am</text> (on Sunday's until <text className="text-foreground dark:text-amber-50">12 am</text>).
             </p>
         </div>
 
