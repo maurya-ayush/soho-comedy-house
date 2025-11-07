@@ -68,6 +68,7 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                                 </>
                             )}
                         </p>
+                        <p className="text-xs text-background dark:text-foreground text-center">Don’t forget to take a screenshot of your Booking ID — just in case the confirmation email doesn’t arrive.</p>
                     </div>
 
                     {/* Booking Details */}
@@ -88,7 +89,7 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                             </div>
                         </div>
 
-                        {isConfirmed && (
+                        {/* {isConfirmed && (
                             <div className="flex items-center gap-3 p-3 bg-background rounded-lg border border-border">
                                 <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                                 <div>
@@ -96,13 +97,17 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                                     <p className="text-sm font-semibold text-foreground">{booking.remainingSeats} available</p>
                                 </div>
                             </div>
-                        )}
+                        )} */}
                     </div>
 
                     {/* Important Information */}
                     <div className="bg-background border border-border rounded-lg p-4 mb-6">
                         <h3 className="text-sm font-bold text-foreground mb-3">📋 Important Information</h3>
                         <ul className="space-y-2 text-xs text-muted-foreground">
+                            <li className="flex gap-2">
+                                <span className="text-primary font-bold">•</span>
+                                <span>Don’t forget to take a screenshot of your Booking ID — just in case the confirmation email doesn’t arrive.</span>
+                            </li>
                             <li className="flex gap-2">
                                 <span className="text-primary font-bold">•</span>
                                 <span>Check your email (including spam folder) for confirmation details</span>

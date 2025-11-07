@@ -228,7 +228,7 @@ export default function ShowDetailsSection() {
                         </div>
 
                         {/* Seats */}
-                        <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
+                        {/* <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                             <Users className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                             <div>
                                 <p className="text-sm text-muted-foreground mb-1">Available Seats</p>
@@ -236,7 +236,7 @@ export default function ShowDetailsSection() {
                                     {show.seatsRemaining} / {show.totalSeats} left
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Price and Buy Button */}
