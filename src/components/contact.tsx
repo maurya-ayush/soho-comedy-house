@@ -53,6 +53,8 @@ export default function Contact() {
                     Soho
                     <br />
                     W1D 3RZ
+                    <br />
+                    London
                   </p>
                 </div>
               </div>
@@ -76,11 +78,11 @@ export default function Contact() {
                   <h4 className="font-semibold text-card-foreground mb-1">Instagram</h4>
                   <p className="text-primary hover:underline cursor-pointer">
                     <a 
-                      href="https://www.instagram.com/30_dean_street" 
+                      href="https://www.instagram.com/soho_comedy_house/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      30_dean_street
+                      soho_comedy_house
                     </a>
                   </p>
                 </div>

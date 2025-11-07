@@ -100,15 +100,11 @@ export default function Header() {
             <a href="#contact" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Contact
             </a>
-            <Button 
-              className="w-full bg-primary text-primary-background hover:bg-primary/90"
-              onClick={() => {
-              const section = document.getElementById("shows");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            >Book Now</Button>
+            <Link to="/events">
+              <Button 
+                className="w-full bg-primary text-primary-background hover:bg-primary/90"
+                >Book Now</Button>
+            </Link>
           </div>
         </div>
       )}

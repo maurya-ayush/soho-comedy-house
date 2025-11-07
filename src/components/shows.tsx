@@ -2,6 +2,7 @@
 
 import { CalendarDays, Clock, MapPin, PoundSterling, Ban } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
 
 const shows = [
     {
@@ -127,11 +128,13 @@ export default function Shows() {
 
                 {/* Button */}
                 <div className="mt-6">
-                <Button
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
-                >
-                    Buy Tickets at the Door
-                </Button>
+                    <Link to="/events">
+                        <Button
+                            className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
+                            >
+                            Buy Tickets at the Door 
+                        </Button>
+                    </Link>
                 </div>
             </div>
             ))}
