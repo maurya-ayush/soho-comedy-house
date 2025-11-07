@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { CheckCircle, AlertCircle, Mail, Ticket, Clock, X } from "lucide-react"
+import { CheckCircle, AlertCircle, Mail, Ticket, X } from "lucide-react"
 
 interface BookingConfirmationProps {
     booking: {

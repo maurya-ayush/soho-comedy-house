@@ -7,7 +7,6 @@ import {
     Clock,
     MapPin,
     PoundSterling,
-    Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import baseURL from "@/lib/baseUrl";
