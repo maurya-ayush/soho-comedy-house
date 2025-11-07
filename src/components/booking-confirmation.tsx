@@ -78,7 +78,7 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
                                 </>
                             )}
                         </p>
-                        <p className="text-xs text-red-400 text-center">
+                        <p className="text-sm text-red-400 text-center">
                             Don’t forget to take a screenshot of your Booking ID — just in
                             case the confirmation email doesn’t arrive.
                         </p>
