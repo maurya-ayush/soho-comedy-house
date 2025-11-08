@@ -1,7 +1,6 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import baseURL from "@/lib/baseUrl"
 import { CheckCircle, AlertCircle, Mail, Ticket, X } from "lucide-react"
 import QRCode from "react-qr-code"
 
@@ -23,7 +22,7 @@ export default function BookingConfirmation({ booking, userName, userEmail, onCl
     const seatsCount = isConfirmed ? booking.seatsBooked : booking.seatsRequested
 
     // Generate QR code for booking validation
-    const qrData = `${baseURL}/api/shows/validate/${booking.bookingId}`;
+    const qrData = `https://api.sohocomedyhouse.com/api/shows/validate/${booking.bookingId}`;
 
     return (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-y-auto">
