@@ -25,7 +25,7 @@ export default function TicketBookingForm({ showId, onClose, onSuccess, onError,
 
     const MIN_SEATS = 1
     const MAX_SEATS = 10
-    const MAX_SEATS_PER_BOOKING = 6 // keep your business rule if needed
+    const MAX_SEATS_PER_BOOKING = 15 // keep your business rule if needed
 
     const getSeatsRequested = (coerceIfInvalid = true) => {
         const n = Number.parseInt(seatsRequestedStr, 10)
