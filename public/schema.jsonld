@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ComedyClub",
+    "name": "Soho Comedy House",
+    "image": "https://sohocomedyhouse.com/logo-dark.png",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30 Dean Street Bar and Club",
+        "addressLocality": "Soho",
+        "postalCode": "W1D 3RZ",
+        "addressCountry": "UK"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.51403489052363,
+        "longitude": -0.13256431534348898
+    },
+    "url": "https://sohocomedyhouse.com",
+    "telephone": "+44 7733 976401",
+    "priceRange": "££",
+    "sameAs": [
+        "https://www.instagram.com/soho_comedy_house",
+        "https://www.instagram.com/30_dean_street"
+    ]
+}
+</script>
