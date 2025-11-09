@@ -260,7 +260,7 @@ export default function ShowDetailsSection() {
                                 ? "Show Ended"
                                 : show.seatsRemaining === 0
                                     ? "Sold Out"
-                                    : "Buy Tickets"}
+                                    : "Reserve a Seat"}
                         </Button>
                     </div>
 

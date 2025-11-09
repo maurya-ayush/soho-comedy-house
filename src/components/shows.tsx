@@ -132,7 +132,7 @@ export default function Shows() {
                         <Button
                             className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
                             >
-                            Buy Tickets at the Door 
+                            Buy Tickets at the Door or Buy Tickets
                         </Button>
                     </Link>
                 </div>
