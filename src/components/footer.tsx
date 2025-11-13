@@ -8,35 +8,52 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-special-elite font-bold text-card-foreground mb-4">Soho Comedy House</h3>
+            <h3 className="text-2xl font-special-elite font-bold text-card-foreground mb-4">
+              Soho Comedy House
+            </h3>
             <p className="text-sm text-card-foreground/70">
-              Soho Comedy House is a premier comedy and entertainment venue right in the vibrant heart of Soho.
+              Soho Comedy House is a premier comedy and entertainment venue
+              right in the vibrant heart of Soho.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-card-foreground mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-card-foreground mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="text-card-foreground/70 hover:text-primary transition-colors">
+                <a
+                  href="#about"
+                  className="text-card-foreground/70 hover:text-primary transition-colors"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-card-foreground/70 hover:text-primary transition-colors">
+                <a
+                  href="#contact"
+                  className="text-card-foreground/70 hover:text-primary transition-colors"
+                >
                   Contact
                 </a>
               </li>
               <li>
-                <Link to="/events" className="text-card-foreground/70 hover:text-primary transition-colors">
-                  Book Tickets
-                </Link>
+                <a
+                  href="https://thestandupclub.co.uk/venue/soho-comedy-house"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-card-foreground/70 hover:text-primary transition-colors"
+                >
+                  Book Tickets on Our Partner Site
+                </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/soho_comedy_house/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.instagram.com/soho_comedy_house/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-card-foreground/70 hover:text-primary transition-colors"
                 >
                   Private Events
@@ -68,8 +85,8 @@ export default function Footer() {
               <div className="flex gap-2 items-start">
                 <Instagram className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                 <a
-                  href="https://www.instagram.com/soho_comedy_house/" 
-                  target="_blank" 
+                  href="https://www.instagram.com/soho_comedy_house/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-card-foreground/70 hover:text-primary transition-colors"
                 >
@@ -99,5 +116,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

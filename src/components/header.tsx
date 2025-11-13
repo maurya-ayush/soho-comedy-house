@@ -31,10 +31,15 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
+          <a
+            href="https://thestandupclub.co.uk/venue/soho-comedy-house"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg text-foreground hover:text-primary transition-colors"
+          >
             Events
-          </Link>
-          <a 
+          </a>
+          <a
             className="text-lg text-foreground hover:text-primary transition-colors"
             onClick={() => {
               const section = document.getElementById("about");
@@ -45,7 +50,7 @@ export default function Header() {
           >
             About
           </a>
-          <a 
+          <a
             className="text-lg text-foreground hover:text-primary transition-colors"
             onClick={() => {
               const section = document.getElementById("contact");
@@ -56,15 +61,15 @@ export default function Header() {
           >
             Contact
           </a>
-          <Button 
-            className=" text-lg items-center bg-primary text-primary-foreground hover:bg-primary/90"
-            onClick={() => {
-              const section = document.getElementById("shows");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-          >Book Now</Button>
+          <Button className=" text-lg items-center bg-primary text-primary-foreground hover:bg-primary/90">
+            <a
+              href="https://thestandupclub.co.uk/venue/soho-comedy-house"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book Tickets
+            </a>
+          </Button>
 
           {/* 👇 Mode Toggle Button */}
           <ModeToggle />
@@ -88,26 +93,44 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-card border-b border-border">
           <div className="px-4 py-4 space-y-4">
-            <Link to="/" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+            <Link
+              to="/"
+              className="block text-background dark:text-foreground/70 hover:text-primary transition-colors"
+            >
               Home
             </Link>
-            <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+            <a
+              href="https://thestandupclub.co.uk/venue/soho-comedy-house"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-background dark:text-foreground/70 hover:text-primary transition-colors"
+            >
               Events
-            </Link>
-            <a href="#about" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+            </a>
+            <a
+              href="#about"
+              className="block text-background dark:text-foreground/70 hover:text-primary transition-colors"
+            >
               About
             </a>
-            <a href="#contact" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+            <a
+              href="#contact"
+              className="block text-background dark:text-foreground/70 hover:text-primary transition-colors"
+            >
               Contact
             </a>
-            <Link to="/events">
-              <Button 
-                className="w-full bg-primary text-primary-background hover:bg-primary/90"
-                >Book Now</Button>
-            </Link>
+            <Button className="w-full bg-primary text-primary-background hover:bg-primary/90">
+              <a
+                href="https://thestandupclub.co.uk/venue/soho-comedy-house"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book Tickets on Our Partner Site
+              </a>
+            </Button>
           </div>
         </div>
       )}
     </header>
-  )
+  );
 }

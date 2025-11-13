@@ -1,59 +1,59 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { ShowCard } from "@/components/show-card"
+// import { useEffect, useState } from "react"
+// import { ShowCard } from "@/components/show-card"
 import { Button } from "@/components/ui/button"
-import { Link } from "react-router-dom"
-import baseURL from "@/lib/baseUrl"
+// import { Link } from "react-router-dom"
+// import baseURL from "@/lib/baseUrl"
 
-interface Show {
-    id: string
-    title: string
-    venue: string
-    date: string
-    startTime: string
-    endTime: string
-    price: number
-    performer?: string | null
-    totalSeats: number
-    seatsRemaining: number
-    status: "upcoming" | "ongoing" | "ended"
-}
+// interface Show {
+//     id: string
+//     title: string
+//     venue: string
+//     date: string
+//     startTime: string
+//     endTime: string
+//     price: number
+//     performer?: string | null
+//     totalSeats: number
+//     seatsRemaining: number
+//     status: "upcoming" | "ongoing" | "ended"
+// }
 
 export function HomeShowsSection() {
-    const [shows, setShows] = useState<Show[]>([])
-    const [loading, setLoading] = useState(true)
+    // const [shows, setShows] = useState<Show[]>([])
+    // const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        const fetchShows = async () => {
-            try {
-                const res = await fetch(`${baseURL}/api/shows`);
-                const data = await res.json();
+    // useEffect(() => {
+    //     const fetchShows = async () => {
+    //         try {
+    //             const res = await fetch(`${baseURL}/api/shows`);
+    //             const data = await res.json();
 
-                if (data.performances) {
-                    // Keep only upcoming or ongoing shows, and limit to 2
-                    const filtered = data.performances
-                        .filter((p: any) => p.status !== 'ended')
-                        .slice(0, 2);
-                    setShows(filtered);
-                }
-            } catch (err) {
-                console.error('Failed to fetch shows:', err);
-            } finally {
-                setLoading(false)
-            }
-        };
-        fetchShows();
-    }, []);
+    //             if (data.performances) {
+    //                 // Keep only upcoming or ongoing shows, and limit to 2
+    //                 const filtered = data.performances
+    //                     .filter((p: any) => p.status !== 'ended')
+    //                     .slice(0, 2);
+    //                 setShows(filtered);
+    //             }
+    //         } catch (err) {
+    //             console.error('Failed to fetch shows:', err);
+    //         } finally {
+    //             setLoading(false)
+    //         }
+    //     };
+    //     fetchShows();
+    // }, []);
 
 
-    if (loading) {
-        return (
-            <section className="py-16 bg-background border-t border-border text-center">
-                <p className="text-foreground/70">Loading events...</p>
-            </section>
-        )
-    }
+    // if (loading) {
+    //     return (
+    //         <section className="py-16 bg-background border-t border-border text-center">
+    //             <p className="text-foreground/70">Loading events...</p>
+    //         </section>
+    //     )
+    // }
 
     return (
         <section id="upcoming-shows" className="py-16 bg-background border-t border-border transition-colors">
@@ -65,18 +65,22 @@ export function HomeShowsSection() {
                 </p>
             </div>
 
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2 mb-8">
+            {/* <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2 mb-8">
                 {shows.map((show) => (
                     <ShowCard key={show.id} show={show} />
                 ))}
-            </div>
+            </div> */}
 
             <div className="text-center">
-                <Link to="/events">
-                    <Button size="lg" variant="outline" className="text-primary border-primary hover:bg-primary/10">
+                <Button size="lg" variant="outline" className="text-primary border-primary hover:bg-primary/10">
+                    <a
+                        href="https://thestandupclub.co.uk/venue/soho-comedy-house"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         View All Shows
-                    </Button>
-                </Link>
+                    </a>
+                </Button>
             </div>
         </section>
     )
