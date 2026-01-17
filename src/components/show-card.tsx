@@ -43,8 +43,8 @@ export function ShowCard({ show }: { show: Show }) {
     return (
         <div className="relative group bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col justify-between">
             {/* Show Info */}
-            {/* <div>
-                {show.startTime && (
+            <div>
+                {/* {show.startTime && (
                     <div className="absolute top-3 right-3">
                         <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
                             {(() => {
