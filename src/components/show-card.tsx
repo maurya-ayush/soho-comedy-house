@@ -43,7 +43,7 @@ export function ShowCard({ show }: { show: Show }) {
     return (
         <div className="relative group bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col justify-between">
             {/* Show Info */}
-            <div>
+            {/* <div>
                 {show.startTime && (
                     <div className="absolute top-3 right-3">
                         <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
@@ -60,7 +60,7 @@ export function ShowCard({ show }: { show: Show }) {
                             })()}
                         </span>
                     </div>
-                )}
+                )} */}
                 {/* Top Info: Date and Time */}
                 <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
                     <div className="flex items-center gap-2 text-primary font-semibold text-sm">
