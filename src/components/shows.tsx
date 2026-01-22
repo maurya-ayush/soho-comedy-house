@@ -19,7 +19,7 @@ const shows = [
         date: "Thursday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£7.95",
+        price: "£5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show 1 (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",

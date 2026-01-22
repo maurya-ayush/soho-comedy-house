@@ -128,7 +128,7 @@ export default function ShowDetailsSection() {
     const handleBookingSuccess = (
         data: BookingData,
         userName: string,
-        userEmail: string
+        userEmail: string,
     ) => {
         console.log("✅ Booking Success:", { data, userName, userEmail });
         setBookingConfirmation({
@@ -143,6 +143,11 @@ export default function ShowDetailsSection() {
         setBookingError(errorMsg);
     };
 
+    // Determine if show is Sun–Wed
+    const showDate = new Date(show.date); // timezone-safe
+    const dayOfWeek = showDate.getDay(); // 0 = Sun ... 6 = Sat
+    const isSunToWed = dayOfWeek >= 0 && dayOfWeek <= 3;
+
     return (
         <main
             className="min-h-screen bg-background pt-20 md:pt-28 pb-10 transition-colors bg-linear-to-b from-background to-card"
@@ -151,7 +156,10 @@ export default function ShowDetailsSection() {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Back Button */}
                 <Link to="/tickets" className="inline-block mb-6">
-                    <Button variant="outline" className="hover:text-primary bg-transparent">
+                    <Button
+                        variant="outline"
+                        className="hover:text-primary bg-transparent"
+                    >
                         ← Back to Events
                     </Button>
                 </Link>
@@ -226,16 +234,19 @@ export default function ShowDetailsSection() {
                             </div>
                         </div>
 
-                        {/* Seats */}
-                        {/* <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
-                            <Users className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                            <div>
-                                <p className="text-sm text-muted-foreground mb-1">Available Seats</p>
-                                <p className="text-lg font-semibold text-foreground">
-                                    {show.seatsRemaining} / {show.totalSeats} left
-                                </p>
+                        {/* Disclaimer for Sun to Wed */}
+                        {isSunToWed && (
+                            <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
+                                <div>
+                                    <p className="text-md text-red-400 font-bold text-foreground mb-1">
+                                        Adult - &pound;1.00<br />
+                                        Student - &pound;1.00 (Current Student ID required)<br />
+                                        Member - &pound;1.00 – Has Soho Comedy House Member Card(1 Card Per Member Monday – Wednesday)<br />
+                                        Priority Ticket - &pound;7.95
+                                    </p>
+                                </div>
                             </div>
-                        </div> */}
+                        )}
                     </div>
 
                     {/* Price and Buy Button */}
