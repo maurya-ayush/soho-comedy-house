@@ -8,16 +8,16 @@ const slides = [
     title: "Monday Night Sit-Down Comedy",
     subtitle:
       "An intimate, hilarious start to your week with seasoned comedians.",
-    image: "/monday-sitdown.jpeg", // ← upload poster here
+    image: "/monday-1.jpeg", // ← upload poster here
     cta: "Book Monday Tickets",
-    link: "/events?day=Monday",
+    link: "/tickets?day=Monday",
   },
   {
     title: "Palmwine Comedy",
     subtitle: "Live on 28th January · 7:30 PM · Featuring Dane Baptiste",
-    image: "/palmwine-comedy.jpeg", // ← upload poster here
+    image: "/palmwine-1.jpeg", // ← upload poster here
     cta: "Book Palmwine Comedy",
-    link: "/events/33688a66-8e81-4189-aa18-674f9e6898a7",
+    link: "/tickets/33688a66-8e81-4189-aa18-674f9e6898a7",
   },
 ];
 

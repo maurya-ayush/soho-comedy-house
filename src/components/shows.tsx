@@ -128,7 +128,7 @@ export default function Shows() {
 
                 {/* Button */}
                 <div className="mt-6">
-                    <Link to="/events">
+                    <Link to="/tickets">
                         <Button
                             className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
                             >

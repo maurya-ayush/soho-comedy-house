@@ -29,7 +29,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link to="/events" className="text-card-foreground/70 hover:text-primary transition-colors">
+                <Link to="/tickets" className="text-card-foreground/70 hover:text-primary transition-colors">
                   Book Tickets
                 </Link>
               </li>

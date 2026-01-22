@@ -1,16 +1,16 @@
 "use client"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import EventsSection from "@/components/events"
+import TicketsSection from "@/components/tickets"
 
-const EventsPage = () => {
+const TicketsPage = () => {
     return (
         <div className="min-h-screen" style={{ fontFamily: 'var(--font-special-elite)' }}>
             <Header />
-            <EventsSection />
+            <TicketsSection />
             <Footer />
         </div>
     )
 }
 
-export default EventsPage
+export default TicketsPage

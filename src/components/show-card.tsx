@@ -127,7 +127,7 @@ export function ShowCard({ show }: { show: Show }) {
 
             {/* Button */}
             <div className="mt-6">
-                <Link to={`/events/${show.id}`}>
+                <Link to={`/tickets/${show.id}`}>
                     <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
                         View Details
                     </Button>

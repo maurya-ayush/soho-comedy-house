@@ -72,7 +72,7 @@ export function HomeShowsSection() {
             </div>
 
             <div className="text-center">
-                <Link to="/events">
+                <Link to="/tickets">
                     <Button size="lg" variant="outline" className="text-primary border-primary hover:bg-primary/10">
                         View All Shows
                     </Button>

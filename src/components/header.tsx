@@ -34,6 +34,9 @@ export default function Header() {
           <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
             Events
           </Link>
+          <Link to="/tickets" className="text-lg text-foreground hover:text-primary transition-colors" >
+            Tickets
+          </Link>
           <a 
             className="text-lg text-foreground hover:text-primary transition-colors"
             onClick={() => {
@@ -94,13 +97,16 @@ export default function Header() {
             <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Events
             </Link>
+            <Link to="/tickets" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+              Tickets
+            </Link>
             <a href="#about" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               About
             </a>
             <a href="#contact" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Contact
             </a>
-            <Link to="/events">
+            <Link to="/tickets">
               <Button 
                 className="w-full bg-primary text-primary-background hover:bg-primary/90"
                 >Book Now</Button>

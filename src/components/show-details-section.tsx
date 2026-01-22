@@ -118,7 +118,7 @@ export default function ShowDetailsSection() {
                 <p className="text-destructive text-lg mb-4">
                     Error: {error || "Event not found"}
                 </p>
-                <Link to="/events">
+                <Link to="/tickets">
                     <Button>Back to Events</Button>
                 </Link>
             </div>
@@ -150,7 +150,7 @@ export default function ShowDetailsSection() {
         >
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Back Button */}
-                <Link to="/events" className="inline-block mb-6">
+                <Link to="/tickets" className="inline-block mb-6">
                     <Button variant="outline" className="hover:text-primary bg-transparent">
                         ← Back to Events
                     </Button>
