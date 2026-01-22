@@ -8,7 +8,7 @@ const events = [
   {
     title: "Palmwine Comedy",
     date: "28th January · 7:30 PM",
-    venue: "Soho Comedy House, 30 Dean Street",
+    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
     description:
       "A night of culture, comedy and storytelling featuring top comedians led by Dane Baptiste.",
     images: [
@@ -25,7 +25,7 @@ const events = [
   {
     title: "Monday Night Sit-Down Comedy",
     date: "Every Monday · 7:30 PM",
-    venue: "Soho Comedy House",
+    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
     description:
       "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",
     images: ["/images/monday-1.jpeg"],
