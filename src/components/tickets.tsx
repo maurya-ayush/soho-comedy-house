@@ -379,7 +379,7 @@ export default function TicketsSection() {
                             date: show.date,
                             startTime: show.startTime,
                             endTime: show.endTime,
-                            price: "7.95",
+                            price: show.price,
                             performer: show.performer,
                             totalSeats: show.totalSeats,
                             seatsRemaining: show.seatsRemaining,
