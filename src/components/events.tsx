@@ -19,7 +19,7 @@ const events = [
       "/images/palmwine-5.jpeg",
       "/images/palmwine-6.jpeg",
     ],
-    ticketLink: "/tickets",
+    ticketLink: "/tickets/33688a66-8e81-4189-aa18-674f9e6898a7",
     featured: true,
   },
   {
@@ -29,7 +29,7 @@ const events = [
     description:
       "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",
     images: ["/images/monday-1.jpeg"],
-    ticketLink: "/tickets",
+    ticketLink: "/tickets?day=Monday",
     featured: false,
   },
 ];
