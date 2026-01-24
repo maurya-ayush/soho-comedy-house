@@ -23,6 +23,16 @@ const events = [
     featured: true,
   },
   {
+    title: "F* Buddies",
+    date: "29th January || 6th, 13th, 26th February  · 7:30 PM",
+    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
+    description:
+      "A high-energy night of sharp jokes and big laughs as F Buddies bring their funniest, boldest comedy to Soho Comedy House. Expect smart humour, great chemistry, and nonstop fun 😂🎤",
+    images: ["/images/buddy-1.jpeg"],
+    ticketLink: "/tickets",
+    featured: true,
+  },
+  {
     title: "Monday Night Sit-Down Comedy",
     date: "Every Monday · 7:30 PM",
     venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
