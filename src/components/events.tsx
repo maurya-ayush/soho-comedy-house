@@ -6,23 +6,6 @@ import { Button } from "@/components/ui/button";
 
 const events = [
   {
-    title: "Palmwine Comedy",
-    date: "28th January · 7:30 PM",
-    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
-    description:
-      "A night of culture, comedy and storytelling featuring top comedians led by Dane Baptiste.",
-    images: [
-      "/images/palmwine-1.jpeg",
-      "/images/palmwine-2.jpeg",
-      "/images/palmwine-3.jpeg",
-      "/images/palmwine-4.jpeg",
-      "/images/palmwine-5.jpeg",
-      "/images/palmwine-6.jpeg",
-    ],
-    ticketLink: "/tickets/33688a66-8e81-4189-aa18-674f9e6898a7",
-    featured: true,
-  },
-  {
     title: "F* Buddies",
     date: "29th January || 6th, 13th, 26th February  · 7:30 PM",
     venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",

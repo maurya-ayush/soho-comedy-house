@@ -2,12 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import {
-    CalendarDays,
-    Clock,
-    MapPin,
-    PoundSterling,
-} from "lucide-react";
+import { CalendarDays, Clock, MapPin, PoundSterling } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import baseURL from "@/lib/baseUrl";
 import TicketBookingForm from "@/components/ticket-booking-form";
@@ -239,9 +234,13 @@ export default function ShowDetailsSection() {
                             <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                                 <div>
                                     <p className="text-md text-red-400 font-bold text-foreground mb-1">
-                                        Adult - &pound;1.00<br />
-                                        Student - &pound;1.00 (Current Student ID required)<br />
-                                        Member - &pound;1.00 – Has Soho Comedy House Member Card(1 Card Per Member Monday – Wednesday)<br />
+                                        Adult - &pound;1.00
+                                        <br />
+                                        Student - &pound;1.00 (Current Student ID required)
+                                        <br />
+                                        Member - &pound;1.00 – Has Soho Comedy House Member Card(1
+                                        Card Per Member Monday – Wednesday)
+                                        <br />
                                         Priority Ticket - &pound;7.95
                                     </p>
                                 </div>
@@ -255,9 +254,17 @@ export default function ShowDetailsSection() {
                             <p className="text-sm text-muted-foreground mb-2">Ticket Price</p>
                             <div className="flex items-center gap-2">
                                 <PoundSterling className="w-6 h-6 text-primary" />
-                                <p className="text-4xl font-bold text-background dark:text-foreground">
-                                    {show.price}
-                                </p>
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-4xl font-bold text-background dark:text-foreground">
+                                        {show.price}
+                                    </span>
+                                    <span className="text-xl font-semibold text-muted-foreground">
+                                        + £0.90
+                                    </span>
+                                    <span className="text-sm text-muted-foreground">
+                                        (Admin fees)
+                                    </span>
+                                </div>
                             </div>
                         </div>
 

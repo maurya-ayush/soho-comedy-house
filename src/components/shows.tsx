@@ -76,6 +76,9 @@ export default function Shows() {
             <p className="text-primary max-w-2xl mx-auto text-sm">
                 Photo ID required. Bar after show until <text className="text-foreground dark:text-amber-50">1 am</text> (on Sunday's until <text className="text-foreground dark:text-amber-50">12 am</text>).
             </p>
+            <p className="text-primary max-w-2xl mx-auto text-sm">
+                Admin Fees = <text className="text-foreground dark:text-amber-50">£0.90</text>
+            </p>
         </div>
 
         {/* Shows Grid */}
