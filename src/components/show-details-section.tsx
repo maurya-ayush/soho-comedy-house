@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { CalendarDays, Clock, MapPin, PoundSterling } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -64,6 +64,23 @@ export default function ShowDetailsSection() {
         userEmail: string;
     } | null>(null);
     const [bookingError, setBookingError] = useState<string | null>(null);
+    const widgetRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        // Only run this if we have the show data and the container exists
+        if (show && widgetRef.current) {
+            // Clear the container to prevent duplicate widgets on re-renders
+            widgetRef.current.innerHTML = "";
+
+            const script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://widgets.designmynight.com/tonic/ticket-widget-v2.min.js?item-ids=6968193fa22751bca46c3e89";
+            script.setAttribute("data-dmn-ticket-widget", "true");
+            script.async = true;
+
+            widgetRef.current.appendChild(script);
+        }
+    }, [show]); // Runs when the show data is loaded
 
     // Fetch performance details
     const fetchShow = async () => {
@@ -300,6 +317,11 @@ export default function ShowDetailsSection() {
                             <li>✓ Minimum 1 item per person (drink or water)</li>
                             <li>✓ Photo ID required at entry</li>
                         </ul>
+                    </div>
+
+                    {/* ADD THE WIDGET HERE */}
+                    <div className="mt-8 w-full overflow-hidden" ref={widgetRef}>
+                        {/* The script will inject the widget here */}
                     </div>
                 </div>
             </div>
