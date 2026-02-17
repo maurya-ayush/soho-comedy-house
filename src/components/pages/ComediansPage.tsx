@@ -32,7 +32,7 @@ const comedians = [
     },
     {
         id: 4,
-        name: "Comedian",
+        name: "Sorabh Dhir",
         role: "Regular",
         image: "/images/com-1.jpeg",
         bio: "Bringing the best vibes and the loudest laughs.",
@@ -40,7 +40,7 @@ const comedians = [
     },
     {
         id: 5,
-        name: "Comedian",
+        name: "Max Mckenzie",
         role: "Regular",
         image: "/images/com-2.jpeg",
         bio: "Bringing the best vibes and the loudest laughs.",
@@ -48,7 +48,7 @@ const comedians = [
     },
     {
         id: 6,
-        name: "Comedian",
+        name: "Onoje",
         role: "Regular",
         image: "/images/com-3.jpeg",
         bio: "Bringing the best vibes and the loudest laughs.",
