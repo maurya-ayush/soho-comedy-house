@@ -3,6 +3,7 @@ import HomePage from './components/pages/HomePage'
 import TicketsPage from './components/pages/TicketsPage'
 import ShowDetailPage from './components/pages/ShowDetailsPage'
 import EventsPage from './components/pages/EventsPage'
+import ComediansPage from './components/pages/ComediansPage'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/tickets" element={<TicketsPage />} />
         <Route path="/tickets/:id" element={<ShowDetailPage />} /> {/* 👈 dynamic route */}
+        <Route path="/comedians" element={<ComediansPage />} />
       </Routes>
     </Router>
   )

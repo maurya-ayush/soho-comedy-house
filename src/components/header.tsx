@@ -34,10 +34,13 @@ export default function Header() {
           <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
             Events
           </Link>
+          <Link to="/comedians" className="text-lg font-medium hover:text-primary transition-colors">
+            Comedians
+          </Link>
           <Link to="/tickets" className="text-lg text-foreground hover:text-primary transition-colors" >
             Tickets
           </Link>
-          <a 
+          <a
             className="text-lg text-foreground hover:text-primary transition-colors"
             onClick={() => {
               const section = document.getElementById("about");
@@ -48,7 +51,7 @@ export default function Header() {
           >
             About
           </a>
-          <a 
+          <a
             className="text-lg text-foreground hover:text-primary transition-colors"
             onClick={() => {
               const section = document.getElementById("contact");
@@ -59,7 +62,7 @@ export default function Header() {
           >
             Contact
           </a>
-          <Button 
+          <Button
             className=" text-lg items-center bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={() => {
               const section = document.getElementById("shows");
@@ -97,6 +100,9 @@ export default function Header() {
             <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Events
             </Link>
+            <Link to="/comedians" className="text-sm font-medium hover:text-primary transition-colors">
+              Comedians
+            </Link>
             <Link to="/tickets" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Tickets
             </Link>
@@ -107,9 +113,9 @@ export default function Header() {
               Contact
             </a>
             <Link to="/tickets">
-              <Button 
+              <Button
                 className="w-full bg-primary text-primary-background hover:bg-primary/90"
-                >Book Now</Button>
+              >Book Now</Button>
             </Link>
           </div>
         </div>
