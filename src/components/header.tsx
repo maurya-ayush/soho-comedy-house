@@ -34,7 +34,7 @@ export default function Header() {
           <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
             Events
           </Link>
-          <Link to="/comedians" className="text-lg font-medium hover:text-primary transition-colors">
+          <Link to="/comedians" className="text-lg text-foreground hover:text-primary transition-colors">
             Comedians
           </Link>
           <Link to="/tickets" className="text-lg text-foreground hover:text-primary transition-colors" >
@@ -100,7 +100,7 @@ export default function Header() {
             <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Events
             </Link>
-            <Link to="/comedians" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link to="/comedians" className="block text-sm text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Comedians
             </Link>
             <Link to="/tickets" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
