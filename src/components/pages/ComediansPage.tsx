@@ -9,7 +9,7 @@ const comedians = [
     {
         id: 1,
         name: "Buddy The Comic",
-        role: "Resident Host",
+        role: "Guest Show",
         image: "/images/buddy-1.jpeg",
         bio: "The face of Soho Comedy. energetic, witty, and always unpredictable.",
         category: "resident"
@@ -25,15 +25,39 @@ const comedians = [
     {
         id: 3,
         name: "Zak Ranger",
-        role: "Guest Spot",
+        role: "Regular",
         image: "/zack-ranger.jpeg",
         bio: "London's fastest rising star. dry wit and deadpan delivery.",
         category: "resident"
     },
     {
-        id: 5,
-        name: "Palm Wine Papi",
+        id: 4,
+        name: "Comedian",
         role: "Regular",
+        image: "/images/com-1.jpeg",
+        bio: "Bringing the best vibes and the loudest laughs.",
+        category: "resident"
+    },
+    {
+        id: 5,
+        name: "Comedian",
+        role: "Regular",
+        image: "/images/com-2.jpeg",
+        bio: "Bringing the best vibes and the loudest laughs.",
+        category: "resident"
+    },
+    {
+        id: 6,
+        name: "Comedian",
+        role: "Regular",
+        image: "/images/com-3.jpeg",
+        bio: "Bringing the best vibes and the loudest laughs.",
+        category: "resident"
+    },
+    {
+        id: 7,
+        name: "Palm Wine Papi",
+        role: "Regular Headliner",
         image: "/images/palmwine-1.jpeg",
         bio: "Bringing the best vibes and the loudest laughs.",
         category: "resident"
