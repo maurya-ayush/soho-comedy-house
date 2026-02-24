@@ -60,7 +60,7 @@ const comedians = [
         role: "Regular Headliner",
         image: "/images/palmwine-1.jpeg",
         bio: "Bringing the best vibes and the loudest laughs.",
-        category: "resident"
+        category: "guest"
     },
 ];
 

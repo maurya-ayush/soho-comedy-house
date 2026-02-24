@@ -25,6 +25,16 @@ const events = [
     ticketLink: "/tickets?day=Monday",
     featured: false,
   },
+  {
+    title: "Comedy Replase SOHO - Sunday Night Comedy",
+    date: "Every Sunday · 7:30 PM",
+    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
+    description:
+      "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",
+    images: ["/images/sunday-1.jpeg"],
+    ticketLink: "/tickets?day=Sunday",
+    featured: false,
+  },
 ];
 
 export default function EventsSection() {
