@@ -7,6 +7,14 @@ import Footer from "../footer";
 
 const comedians = [
     {
+        id: 7,
+        name: "Dean Helliwell",
+        role: "MC & Host",
+        image: "/images/black-flag-1.jpeg",
+        bio: "Bringing the best vibes and the loudest laughs.",
+        category: "guest"
+    },
+    {
         id: 1,
         name: "Buddy The Comic",
         role: "Guest Show",
@@ -54,14 +62,7 @@ const comedians = [
         bio: "Bringing the best vibes and the loudest laughs.",
         category: "resident"
     },
-    {
-        id: 7,
-        name: "Palm Wine Papi",
-        role: "Regular Headliner",
-        image: "/images/palmwine-1.jpeg",
-        bio: "Bringing the best vibes and the loudest laughs.",
-        category: "guest"
-    },
+    
 ];
 
 export default function ComediansPage() {
