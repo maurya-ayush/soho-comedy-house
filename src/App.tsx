@@ -4,10 +4,12 @@ import TicketsPage from './components/pages/TicketsPage'
 import ShowDetailPage from './components/pages/ShowDetailsPage'
 import EventsPage from './components/pages/EventsPage'
 import ComediansPage from './components/pages/ComediansPage'
+import ScrollToTop from './components/scroll-to-top'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
