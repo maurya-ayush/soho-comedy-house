@@ -5,20 +5,6 @@ import { Link } from "react-router-dom"
 
 const weeklyEvents = [
     {
-        title: "Black Flag",
-        schedule: "13th March · 7:30 PM",
-        description: "Prepare for a night of dark, twisted, and unfiltered humor as Black Flag Comedy Club takes over Soho Comedy House. Join us on March 13th for an unapologetic opening night Hosted by Dean Helliwell and featuring headliner Pat Smith and London’s sharpest comedic voices.",
-        buttonText: "Reserve a Seat",
-        image: "/images/black-flag-2.jpeg" // Using image from your gallery context
-    },
-    {
-        title: "F* Buddies",
-        schedule: "26th February  · 7:30 PM",
-        description: "A high-energy night of sharp jokes and big laughs as F Buddies bring their funniest, boldest comedy to Soho Comedy House. Expect smart humour, great chemistry, and nonstop fun 😂🎤",
-        buttonText: "View Lineup",
-        image: "/images/buddy-1.jpeg" // Using image from your gallery context
-    },
-    {
         title: "Comedy Replase SOHO - Sunday Night Comedy",
         schedule: "Every Sunday · 7:30 PM",
         description: "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",

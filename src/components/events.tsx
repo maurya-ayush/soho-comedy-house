@@ -5,26 +5,16 @@ import Lightbox from "@/components/Lightbox";
 import { Button } from "@/components/ui/button";
 
 const events = [
-  {
-    title: "Black Flag",
-    date: "13th March · 7:30 PM",
-    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
-    description:
-      "Prepare for a night of dark, twisted, and unfiltered humor as Black Flag Comedy Club takes over Soho Comedy House. Join us on March 13th for an unapologetic opening night Hosted by Dean Helliwell and featuring headliner Pat Smith and London’s sharpest comedic voices.",
-    images: ["/images/black-flag-2.jpeg", "/images/black-flag-1.jpeg"],
-    ticketLink: "/tickets/b7691fb2-33ba-4151-a6b0-262a4833d7bf",
-    featured: true,
-  },
-  {
-    title: "F* Buddies",
-    date: "29th January || 6th, 13th, 26th February  · 7:30 PM",
-    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
-    description:
-      "A high-energy night of sharp jokes and big laughs as F Buddies bring their funniest, boldest comedy to Soho Comedy House. Expect smart humour, great chemistry, and nonstop fun 😂🎤",
-    images: ["/images/buddy-1.jpeg"],
-    ticketLink: "/tickets",
-    featured: true,
-  },
+  // {
+  //   title: "Black Flag",
+  //   date: "13th March · 7:30 PM",
+  //   venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
+  //   description:
+  //     "Prepare for a night of dark, twisted, and unfiltered humor as Black Flag Comedy Club takes over Soho Comedy House. Join us on March 13th for an unapologetic opening night Hosted by Dean Helliwell and featuring headliner Pat Smith and London’s sharpest comedic voices.",
+  //   images: ["/images/black-flag-2.jpeg", "/images/black-flag-1.jpeg"],
+  //   ticketLink: "/tickets/b7691fb2-33ba-4151-a6b0-262a4833d7bf",
+  //   featured: true,
+  // },
   {
     title: "Comedy Replase SOHO - Sunday Night Comedy",
     date: "Every Sunday · 7:30 PM",
