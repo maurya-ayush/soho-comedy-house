@@ -9,7 +9,7 @@ const weeklyEvents = [
         schedule: "Every Sunday · 7:30 PM",
         description: "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",
         buttonText: "View Event",
-        image: "/images/sunday-1.jpeg" // Using image from your gallery context
+        image: "/images/sunday-1.jpeg"
     }
 ]
 
