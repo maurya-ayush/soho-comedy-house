@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
-import { CalendarDays, Clock, MapPin, PoundSterling } from "lucide-react";
+import { CalendarDays, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import baseURL from "@/lib/baseUrl";
 import TicketBookingForm from "@/components/ticket-booking-form";
@@ -266,7 +266,7 @@ export default function ShowDetailsSection() {
                     </div>
 
                     {/* Price and Buy Button */}
-                    <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    {/* <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
                             <p className="text-sm text-muted-foreground mb-2">Ticket Price</p>
                             <div className="flex items-center gap-2">
@@ -297,7 +297,7 @@ export default function ShowDetailsSection() {
                                     ? "Sold Out"
                                     : "Reserve a Seat"}
                         </Button>
-                    </div>
+                    </div> */}
 
                     {/* Booking Error */}
                     {bookingError && (
