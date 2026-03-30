@@ -15,16 +15,16 @@ const events = [
   //   ticketLink: "/tickets/b7691fb2-33ba-4151-a6b0-262a4833d7bf",
   //   featured: true,
   // },
-  {
-    title: "Comedy Replase SOHO - Sunday Night Comedy",
-    date: "Every Sunday · 7:30 PM",
-    venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
-    description:
-      "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",
-    images: ["/images/sunday-1.jpeg"],
-    ticketLink: "/tickets?day=Sunday",
-    featured: true,
-  },
+  // {
+  //   title: "Comedy Replase SOHO - Sunday Night Comedy",
+  //   date: "Every Sunday · 7:30 PM",
+  //   venue: "Soho Comedy House, 30 Dean Street Bar and Club, Soho, W1D 3RZ, London",
+  //   description:
+  //     "An intimate weekly comedy experience with seasoned comedians in a relaxed sit-down format.",
+  //   images: ["/images/sunday-1.jpeg"],
+  //   ticketLink: "/tickets?day=Sunday",
+  //   featured: true,
+  // },
   {
     title: "Monday Night Sit-Down Comedy",
     date: "Every Monday · 7:30 PM",

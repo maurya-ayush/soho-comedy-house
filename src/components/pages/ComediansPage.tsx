@@ -6,22 +6,22 @@ import Header from "../header";
 import Footer from "../footer";
 
 const comedians = [
-    {
-        id: 7,
-        name: "Dean Helliwell",
-        role: "MC & Host",
-        image: "/images/black-flag-1.jpeg",
-        bio: "Bringing the best vibes and the loudest laughs.",
-        category: "guest"
-    },
-    {
-        id: 1,
-        name: "Buddy The Comic",
-        role: "Guest Show",
-        image: "/images/buddy-1.jpeg",
-        bio: "The face of Soho Comedy. energetic, witty, and always unpredictable.",
-        category: "resident"
-    },
+    // {
+    //     id: 7,
+    //     name: "Dean Helliwell",
+    //     role: "MC & Host",
+    //     image: "/images/black-flag-1.jpeg",
+    //     bio: "Bringing the best vibes and the loudest laughs.",
+    //     category: "guest"
+    // },
+    // {
+    //     id: 1,
+    //     name: "Buddy The Comic",
+    //     role: "Guest Show",
+    //     image: "/images/buddy-1.jpeg",
+    //     bio: "The face of Soho Comedy. energetic, witty, and always unpredictable.",
+    //     category: "resident"
+    // },
     {
         id: 2,
         name: "Harry Coombes",
