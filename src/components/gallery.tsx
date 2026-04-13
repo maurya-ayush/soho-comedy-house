@@ -5,16 +5,14 @@ import useEmblaCarousel from "embla-carousel-react"
 import { useEffect, useRef } from "react"
 
 const images = [
-    "/gallery2.jpg",
+    "/gallery1.webp",
+    "/gallery2.webp",
     "/gallery3.jpg",
     "/gallery4.jpg",
-    "/gallery5.jpg",
-    "/gallery6.jpg",
-    "/gallery2.jpg",
-    "/gallery3.jpg",
-    "/gallery4.jpg",
-    "/gallery5.jpg",
-    "/gallery6.jpg",
+    "/gallery5.webp",
+    "/gallery7.webp",
+    "/gallery8.webp",
+    "/gallery9.jpg",
 ]
 
 export default function Gallery() {
