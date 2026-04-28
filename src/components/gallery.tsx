@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react"
 import { useEffect, useRef } from "react"
 
 const images = [
+    "/zakhir.jpeg",
     "/gallery1.webp",
     "/gallery2.webp",
     "/gallery3.jpg",
