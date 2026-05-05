@@ -37,7 +37,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="border-primary dark:border-primary text-primary dark:text-primary hover:bg-primary/10 dark:hover:bg-primary/10 text-base sm:text-lg px-8 bg-neutral-600"
+            className="border-primary dark:border-primary text-primary dark:text-primary dark:hover:bg-primary/10 text-base sm:text-lg px-8 bg-neutral-600"
             onClick={() => {
               const section = document.getElementById("upcoming-shows");
               if (section) {
