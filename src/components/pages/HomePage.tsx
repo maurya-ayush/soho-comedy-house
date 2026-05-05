@@ -6,7 +6,7 @@ import About from "@/components/about"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import { HomeShowsSection } from "@/components/home-shows-section"
-import UpcomingEvents from "@/components/upcoming-events"
+// import UpcomingEvents from "@/components/upcoming-events"
 
 
 const HomePage = () => {

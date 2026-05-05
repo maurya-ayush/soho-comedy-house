@@ -11,7 +11,7 @@ const shows = [
         title: "All Shows",
         price: "£5",
         venue: "30 Dean Street Bar and Club",
-        descriptionLine1: "Show 1 (7:30 PM - 9:30 PM).",
+        descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
@@ -31,7 +31,7 @@ const shows = [
         title: "All Shows",
         price: "£7.95",
         venue: "30 Dean Street Bar and Club",
-        descriptionLine1: "Show 1 (5:30 PM - 7:30 PM).",
+        descriptionLine1: "Show (5:30 PM - 7:30 PM).",
         // descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
@@ -106,7 +106,7 @@ export default function Shows() {
                 </h3>
 
                 <p className="text-background/70 dark:text-foreground/70 mb-2">{show.descriptionLine1}</p>
-                <p className="text-background/70 dark:text-foreground/70 mb-2">{show.descriptionLine2}</p>
+                {/* <p className="text-background/70 dark:text-foreground/70 mb-2">{show.descriptionLine2}</p> */}
                 <p className="text-background/70 dark:text-foreground/70 mb-2">{show.descriptionLine3}</p>
 
                 <div className="space-y-2 text-sm">
