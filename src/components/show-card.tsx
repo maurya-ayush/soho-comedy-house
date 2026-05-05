@@ -96,7 +96,7 @@ export function ShowCard({ show }: { show: Show }) {
                 <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80 mb-2">
                     <PoundSterling className="w-4 h-4 text-primary" />
                     Ticket Price:
-                    <span className="font-semibold ml-1">£{show.price}</span>
+                    <span className="font-semibold ml-1">£ {show.price}</span>
                 </div>
 
                 {/* Seats Remaining */}
