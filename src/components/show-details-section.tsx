@@ -155,10 +155,10 @@ export default function ShowDetailsSection() {
         setBookingError(errorMsg);
     };
 
-    // Determine if show is Sun–Wed
-    const showDate = new Date(show.date); // timezone-safe
-    const dayOfWeek = showDate.getDay(); // 0 = Sun ... 6 = Sat
-    const isSunToWed = dayOfWeek >= 0 && dayOfWeek <= 3;
+    // // Determine if show is Sun–Wed
+    // const showDate = new Date(show.date); // timezone-safe
+    // const dayOfWeek = showDate.getDay(); // 0 = Sun ... 6 = Sat
+    // const isSunToWed = dayOfWeek >= 0 && dayOfWeek <= 3;
 
     return (
         <main
@@ -246,7 +246,7 @@ export default function ShowDetailsSection() {
                             </div>
                         </div>
 
-                        {/* Disclaimer for Sun to Wed */}
+                        {/* Disclaimer for Sun to Wed
                         {isSunToWed && (
                             <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
                                 <div>
@@ -262,7 +262,7 @@ export default function ShowDetailsSection() {
                                     </p>
                                 </div>
                             </div>
-                        )}
+                        )} */}
                     </div>
 
                     {/* Price and Buy Button */}

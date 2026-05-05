@@ -45,7 +45,7 @@ export default function Hero() {
               }
             }}
           >
-            Learn More
+            From £ 5
           </Button>
         </div>
 

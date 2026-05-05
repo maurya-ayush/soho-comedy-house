@@ -9,7 +9,7 @@ const shows = [
         date: "Monday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£5",
+        price: "£ 5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
@@ -19,7 +19,7 @@ const shows = [
         date: "Tuesday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£5",
+        price: "£ 5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
@@ -29,7 +29,7 @@ const shows = [
         date: "Wednesday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£5",
+        price: "£ 5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
@@ -39,7 +39,7 @@ const shows = [
         date: "Thursday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£5",
+        price: "£ 5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
@@ -49,7 +49,7 @@ const shows = [
         date: "Friday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£7.95",
+        price: "£ 7.95",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (5:30 PM - 7:30 PM).",
         // descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
@@ -59,7 +59,7 @@ const shows = [
         date: "Saturday",
         time: "7:30 PM - 11:30 PM",
         title: "All Shows",
-        price: "£7.95",
+        price: "£ 7.95",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (9:30 PM - 11:30 PM).",
@@ -69,7 +69,7 @@ const shows = [
         date: "Sunday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
-        price: "£5",
+        price: "£ 5",
         venue: "30 Dean Street Bar and Club",
         descriptionLine1: "Show (7:30 PM - 9:30 PM).",
         // descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
@@ -90,7 +90,7 @@ export default function Shows() {
             <p className="text-foreground/70 max-w-2xl mx-auto text-lg">
             Catch your favorite comedians live on stage — laughter, drinks, and an unforgettable evening await.
             </p>
-            <p className="text-primary max-w-2xl mx-auto text-lg mt-3">
+            {/* <p className="text-primary max-w-2xl mx-auto text-lg mt-3">
                 (1 item minimum per person: Drink or bottle of water.)
             </p>
             <p className="text-primary max-w-2xl mx-auto text-sm">
@@ -98,7 +98,7 @@ export default function Shows() {
             </p>
             <p className="text-primary max-w-2xl mx-auto text-sm">
                 Admin Fees = <text className="text-foreground dark:text-amber-50">£0.90</text>
-            </p>
+            </p> */}
         </div>
 
         {/* Shows Grid */}
