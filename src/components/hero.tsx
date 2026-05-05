@@ -32,7 +32,7 @@ export default function Hero() {
               }
             }}
           >
-            Book Tickets
+            From £ 5
           </Button>
           <Button
             size="lg"
@@ -45,7 +45,7 @@ export default function Hero() {
               }
             }}
           >
-            From £ 5
+            Book Tickets
           </Button>
         </div>
 
