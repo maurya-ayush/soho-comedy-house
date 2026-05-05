@@ -1,12 +1,12 @@
 "use client"
 
-import { CalendarDays, Clock, MapPin, PoundSterling, Ban } from "lucide-react"
+import { CalendarDays, Clock, MapPin, PoundSterling, Ban, DoorOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
 
 const shows = [
     {
-        date: "Sun - Thurs",
+        date: "Monday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
         price: "£5",
@@ -15,18 +15,38 @@ const shows = [
         // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
-    // {
-    //     date: "Thursday",
-    //     time: "7:30 PM - 9:30 PM",
-    //     title: "All Shows",
-    //     price: "£3",
-    //     venue: "30 Dean Street Bar and Club",
-    //     descriptionLine1: "Show 1 (7:30 PM - 9:30 PM).",
-    //     // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
-    //     descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
-    // },
     {
-        date: "Fri - Sat ",
+        date: "Tuesday",
+        time: "7:30 PM - 9:30 PM",
+        title: "All Shows",
+        price: "£5",
+        venue: "30 Dean Street Bar and Club",
+        descriptionLine1: "Show (7:30 PM - 9:30 PM).",
+        // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
+        descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
+    },
+    {
+        date: "Wednesday",
+        time: "7:30 PM - 9:30 PM",
+        title: "All Shows",
+        price: "£5",
+        venue: "30 Dean Street Bar and Club",
+        descriptionLine1: "Show (7:30 PM - 9:30 PM).",
+        // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
+        descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
+    },
+    {
+        date: "Thursday",
+        time: "7:30 PM - 9:30 PM",
+        title: "All Shows",
+        price: "£5",
+        venue: "30 Dean Street Bar and Club",
+        descriptionLine1: "Show (7:30 PM - 9:30 PM).",
+        // descriptionLine2: "Show 2 (8:30 PM - 10:30 PM).",
+        descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
+    },
+    {
+        date: "Friday",
         time: "7:30 PM - 9:30 PM",
         title: "All Shows",
         price: "£7.95",
@@ -35,26 +55,26 @@ const shows = [
         // descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
         descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
     },
-    // {
-    //     date: "Saturday",
-    //     time: "7:30 PM - 11:30 PM",
-    //     title: "All Shows",
-    //     price: "£7.95",
-    //     venue: "30 Dean Street Bar and Club",
-    //     descriptionLine1: "Show 1 (7:30 PM - 9:30 PM).",
-    //     descriptionLine2: "Show 2 (9:30 PM - 11:30 PM).",
-    //     descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
-    // },
-    // {
-    //     date: "Sunday",
-    //     time: "7:30 PM - 9:30 PM",
-    //     title: "All Shows",
-    //     price: "£1",
-    //     venue: "30 Dean Street Bar and Club",
-    //     // descriptionLine1: "Show 1 (5:00 PM - 7:00 PM).",
-    //     descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
-    //     descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
-    // },
+    {
+        date: "Saturday",
+        time: "7:30 PM - 11:30 PM",
+        title: "All Shows",
+        price: "£7.95",
+        venue: "30 Dean Street Bar and Club",
+        descriptionLine1: "Show (7:30 PM - 9:30 PM).",
+        // descriptionLine2: "Show 2 (9:30 PM - 11:30 PM).",
+        descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
+    },
+    {
+        date: "Sunday",
+        time: "7:30 PM - 9:30 PM",
+        title: "All Shows",
+        price: "£5",
+        venue: "30 Dean Street Bar and Club",
+        descriptionLine1: "Show (7:30 PM - 9:30 PM).",
+        // descriptionLine2: "Show 2 (7:30 PM - 9:30 PM).",
+        descriptionLine3: "Arriving Time :- Half Hour Early to Collect Tickets.",
+    },
 ]
 
 export default function Shows() {
@@ -126,6 +146,10 @@ export default function Shows() {
                     <Ban className="w-4 h-4 text-primary" />
                         Age Restriction: <text className="text-primary font-bold">Strictly  18+</text>
                     </div>
+                    <div className="flex items-center gap-2 text-background/80 dark:text-foreground/80">
+                    <DoorOpen className="w-4 h-4 text-primary" />
+                        Tickets available at Door
+                    </div>
                 </div>
                 </div>
 
@@ -135,7 +159,7 @@ export default function Shows() {
                         <Button
                             className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
                             >
-                            Buy Tickets at the Door or Buy Tickets
+                            Tickets
                         </Button>
                     </Link>
                 </div>
