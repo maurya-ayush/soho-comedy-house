@@ -31,14 +31,14 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
-            Events
-          </Link>
-          <Link to="/comedians" className="text-lg text-foreground hover:text-primary transition-colors">
-            Comedians
-          </Link>
           <Link to="/tickets" className="text-lg text-foreground hover:text-primary transition-colors" >
             Tickets
+          </Link>
+          {/* <Link to="/events" className="text-lg text-foreground hover:text-primary transition-colors" >
+            Events
+          </Link> */}
+          <Link to="/comedians" className="text-lg text-foreground hover:text-primary transition-colors">
+            Comedians
           </Link>
           <a
             className="text-lg text-foreground hover:text-primary transition-colors"
@@ -97,9 +97,9 @@ export default function Header() {
             <Link to="/" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Home
             </Link>
-            <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
+            {/* <Link to="/events" className="block text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Events
-            </Link>
+            </Link> */}
             <Link to="/comedians" className="block text-sm text-background dark:text-foreground/70 hover:text-primary transition-colors">
               Comedians
             </Link>

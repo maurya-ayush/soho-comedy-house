@@ -15,7 +15,7 @@ const HomePage = () => {
         <Header />
         <Hero />
         <Gallery />
-        <UpcomingEvents />
+        {/* <UpcomingEvents /> */}
         <HomeShowsSection />
         <Shows /> 
         <About />
