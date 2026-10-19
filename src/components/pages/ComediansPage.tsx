@@ -62,7 +62,22 @@ const comedians = [
         bio: "Bringing the best vibes and the loudest laughs.",
         category: "resident"
     },
-    
+    {
+        id: 6,
+        name: "Daniël Trengove",
+        role: "Regular",
+        image: "/daniel-trengove.jpeg",
+        bio: "Bringing the best vibes and the loudest laughs.",
+        category: "resident"
+    },
+    {
+        id: 6,
+        name: "Bilal Rashid",
+        role: "Regular",
+        image: "/bilal-rashid.jpeg",
+        bio: "Bringing the best vibes and the loudest laughs.",
+        category: "resident"
+    },
 ];
 
 export default function ComediansPage() {
